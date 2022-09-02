@@ -1,9 +1,8 @@
 // 2022-09-01
 // https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 
-fun goodNodes(root: TreeNode?): Int {
-    return goodNodes_rec(Integer.MIN_VALUE, root)
-}
+fun goodNodes(root: TreeNode?): Int =
+    goodNodes_rec(Integer.MIN_VALUE, root)
 
 fun goodNodes_rec(maxOnThePath: Int, root: TreeNode?): Int {
     if (root == null) {
