@@ -1,3 +1,6 @@
+// 2022-09-03
+// https://leetcode.com/problems/numbers-with-same-consecutive-differences/
+
 fun numsSameConsecDiff(n: Int, k: Int): IntArray =
     (1..9).flatMap { numsSameConsecDiffHelper(it, n, k) }
         .toIntArray()
