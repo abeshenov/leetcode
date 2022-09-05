@@ -8,10 +8,10 @@ fun averageOfLevels(root: TreeNode?): DoubleArray =
         .map { levelAverage(it) }
         .toList().toDoubleArray()
 
-fun getLevels(root: TreeNode?): Sequence<List<Int>> =
+private fun getLevels(root: TreeNode?): Sequence<List<Int>> =
     getLevelsHelper(listOfNotNull(root))
 
-fun getLevelsHelper(level: List<TreeNode>): Sequence<List<Int>> =
+private fun getLevelsHelper(level: List<TreeNode>): Sequence<List<Int>> =
     sequence {
         if (level.isNotEmpty()) {
             yield(level.map { it.`val`})
@@ -20,5 +20,5 @@ fun getLevelsHelper(level: List<TreeNode>): Sequence<List<Int>> =
         }
     }
 
-fun levelAverage(level: List<Int>): Double =
+private fun levelAverage(level: List<Int>): Double =
     level.map { it.toDouble() }.sum() / level.size

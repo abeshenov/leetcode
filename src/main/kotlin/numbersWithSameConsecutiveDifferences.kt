@@ -5,7 +5,7 @@ fun numsSameConsecDiff(n: Int, k: Int): IntArray =
     (1..9).flatMap { numsSameConsecDiffHelper(it, n, k) }
         .toIntArray()
 
-fun numsSameConsecDiffHelper(firstDigit: Int, n: Int, k: Int): List<Int> {
+private fun numsSameConsecDiffHelper(firstDigit: Int, n: Int, k: Int): List<Int> {
     if (n == 1) {
         return listOf(firstDigit)
     }
@@ -23,11 +23,11 @@ fun numsSameConsecDiffHelper(firstDigit: Int, n: Int, k: Int): List<Int> {
     return result.map { addDigit(it, n - 1, firstDigit) }
 }
 
-fun addDigit(num: Int, numOfDigits: Int, digit: Int): Int =
+private fun addDigit(num: Int, numOfDigits: Int, digit: Int): Int =
     num + pow(10, numOfDigits) * digit
 
 // Because there's no standard pow() for integers
-fun pow(base: Int, exponent: Int): Int {
+private fun pow(base: Int, exponent: Int): Int {
     if (exponent == 0) {
         return 1
     }

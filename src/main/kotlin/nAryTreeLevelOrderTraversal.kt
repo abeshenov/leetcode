@@ -2,11 +2,12 @@
 // https://leetcode.com/problems/n-ary-tree-level-order-traversal/
 
 fun levelOrder(root: Node?): List<List<Int>> =
-    levelOrderHelper(listOfNotNull(root)).toList()
+    levelOrderHelper(listOfNotNull(root))
 
-private fun levelOrderHelper(level: List<Node>): Sequence<List<Int>> = sequence {
+private tailrec fun levelOrderHelper(level: List<Node>, acc: MutableList<List<Int>> = mutableListOf()): List<List<Int>> =
     if (level.isNotEmpty()) {
-        yield(level.map { it.`val` })
-        yieldAll(levelOrderHelper(level.flatMap { it.children }.filterNotNull()))
+        acc.add(level.map { it.`val` })
+        levelOrderHelper(level.flatMap { it.children }.filterNotNull(), acc)
+    } else {
+        acc
     }
-}
