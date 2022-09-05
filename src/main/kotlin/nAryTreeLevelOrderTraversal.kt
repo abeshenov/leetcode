@@ -7,6 +7,6 @@ fun levelOrder(root: Node?): List<List<Int>> =
 private fun levelOrderHelper(level: List<Node>): Sequence<List<Int>> = sequence {
     if (level.isNotEmpty()) {
         yield(level.map { it.`val` })
-        yieldAll(levelOrderHelper(level.flatMap { node -> node.children }.filterNotNull()))
+        yieldAll(levelOrderHelper(level.flatMap { it.children }.filterNotNull()))
     }
 }
