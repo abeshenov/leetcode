@@ -4,7 +4,10 @@
 fun levelOrder(root: Node?): List<List<Int>> =
     levelOrderHelper(listOfNotNull(root))
 
-private tailrec fun levelOrderHelper(level: List<Node>, acc: MutableList<List<Int>> = mutableListOf()): List<List<Int>> =
+private tailrec fun levelOrderHelper(
+    level: List<Node>,
+    acc: MutableList<List<Int>> = mutableListOf()
+): List<List<Int>> =
     if (level.isEmpty()) {
         acc
     } else {
