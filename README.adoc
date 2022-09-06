@@ -4,4 +4,5 @@
 - link:./src/main/kotlin/averageOfLevelsInBinaryTree.kt[2022-09-02: Average of Levels in Binary Tree]
 - link:./src/main/kotlin/numbersWithSameConsecutiveDifferences.kt[2022-09-03: Numbers With Same Consecutive Differences]
 - link:./src/main/kotlin/verticalOrderTraversalOfBinaryTree.kt[2022-09-04: Vertical Order Traversal of a Binary Tree]
-- link:src/main/kotlin/nAryTreeLevelOrderTraversal.kt[2022-09-05: N-ary Tree Level Order Traversal]
+- link:./src/main/kotlin/nAryTreeLevelOrderTraversal.kt[2022-09-05: N-ary Tree Level Order Traversal]
+- link:./src/main/kotlin/binaryTreePruning.kt[2022-09-06: Binary Tree Pruning]
