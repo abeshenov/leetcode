@@ -25,8 +25,9 @@ private data class Character(val attack: Int, val defense: Int)
  * Example of our custom sorting:
  * [ (6,1), (6,9), (5,9), (5,9), (4,4), (3,6), (3,10), (2,1), (2,5), (1,10) ]
  */
-private val characterComparator = compareBy<Character> { chr -> -chr.attack }
-    .then(compareBy { chr -> chr.defense } )
+private val characterComparator: Comparator<Character> =
+    compareBy<Character> { -it.attack }
+        .then(compareBy { it.defense } )
 
 private fun arrayToCharacter(property: IntArray): Character =
     Character(property[0], property[1])
