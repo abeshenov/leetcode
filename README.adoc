@@ -8,3 +8,4 @@
 - link:./src/main/kotlin/binaryTreePruning.kt[2022-09-06: Binary Tree Pruning]
 - link:./src/main/kotlin/constructStringFromBinaryTree.kt[2022-09-07: Construct String from Binary Tree]
 - link:./src/main/kotlin/binaryTreeInorderTraversal.kt[2022-09-08: Binary Tree Inorder Traversal]
+- link:./src/main/kotlin/numberOfWeakCharactersInGame.kt[2022-09-09: The Number of Weak Characters in the Game]
