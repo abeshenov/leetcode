@@ -41,12 +41,12 @@ fun maxProfit(k: Int, prices: IntArray): Int {
         for (j in 1..k) {
             // If we have no stock at step i, we either:
             //   1) had no stock at step i - 1,
-            //   2) had stock at step i - 1 and just sold it, gaining +prices[i].
+            //   2) had stock and just sold it, gaining prices[i].
             maxNoStock[i][j] = Math.max(maxNoStock[i - 1][j], maxWithStock[i - 1][j - 1] + prices[i])
 
             // If we have stock at step i, we either:
             //   1) had stock at step i - 1 and didn't sell it,
-            //   2) had no stock and just bought it, thus losing -prices[i]
+            //   2) had no stock and just bought it, losing prices[i]
             maxWithStock[i][j] = Math.max(maxWithStock[i - 1][j], maxNoStock[i - 1][j] - prices[i])
         }
     }
