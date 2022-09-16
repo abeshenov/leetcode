@@ -15,3 +15,4 @@
 - link:src/main/kotlin/utf8Validation.kt[2022-09-13: UTF-8 Validation]
 - link:src/main/kotlin/pseudoPalindromicPathsInBinaryTree.kt[2022-09-14: Pseudo-Palindromic Paths in a Binary Tree]
 - link:src/main/kotlin/findOriginalArrayFromDoubledArray.kt[2022-09-15: Find Original Array From Doubled Array]
+- link:src/main/kotlin/maximumScoreFromPerformingMultiplicationOperations.kt[2022-09-16: Maximum Score from Performing Multiplication Operations]
