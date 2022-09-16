@@ -34,7 +34,7 @@ private class DpHelper(val nums: IntArray, val multipliers: IntArray) {
 
         // If we choose the right branch:
         val rightPosition = nums.lastIndex - rightSkipped
-        val rightValue = nums[rightPosition] * multipliers[step] + calculate(leftSkipped,  rightSkipped + 1)
+        val rightValue = nums[rightPosition] * multipliers[step] + calculate(leftSkipped, rightSkipped + 1)
 
         val result = Math.max(leftValue, rightValue)
         memo[leftSkipped][rightSkipped] = result
