@@ -19,7 +19,7 @@ fun diagonalSort(mat: Array<IntArray>): Array<IntArray> {
     return mat
 }
 
-fun getDiagonal(mat: Array<IntArray>, startRow: Int, startColumn: Int): IntArray {
+private fun getDiagonal(mat: Array<IntArray>, startRow: Int, startColumn: Int): IntArray {
     val rows = mat.size
     val columns = mat[0].size
     val diagonalLength = Math.min(rows - startRow, columns - startColumn)
@@ -41,7 +41,7 @@ fun getDiagonal(mat: Array<IntArray>, startRow: Int, startColumn: Int): IntArray
     return diagonal
 }
 
-fun setDiagonal(mat: Array<IntArray>, startRow: Int, startColumn: Int, diagonal: IntArray) {
+private fun setDiagonal(mat: Array<IntArray>, startRow: Int, startColumn: Int, diagonal: IntArray) {
     val rows = mat.size
     val columns = mat[0].size
 
