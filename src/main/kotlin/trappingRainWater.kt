@@ -4,9 +4,10 @@
 // Note that an element height[i] will trap
 // min(max(height[0..i]), max(height[i..])) - height[i]
 //
-//       ▓
-//   ▓░░░▓▓░▓
-// ▓░▓▓░▓▓▓▓▓▓
+//        ▓
+//    ▓░░░▓▓░▓
+//  ▓░▓▓░▓▓▓▓▓▓
+// ▔▔▔▔▔▔▔▔▔▔▔▔▔
 
 private fun trapInefficient(height: IntArray): Int =
     height.indices.sumOf { i ->
@@ -25,18 +26,17 @@ private fun List<Int>.max(): Int =
 //   leftMaximums  := height.slice(0..i).max()
 //   rightMaximums := height.slice(i..height.lastIndex).max()
 
-fun trap(height: IntArray): Int {
+fun trap(height: IntArray): Int =
     if (height.isEmpty()) {
-        return 0
-    }
+        0
+    } else {
+        val leftMaximums = leftMaximums(height)
+        val rightMaximums = rightMaximums(height)
 
-    val leftMaximums = leftMaximums(height)
-    val rightMaximums = rightMaximums(height)
-
-    return height.indices.sumOf { i ->
-        Math.min(leftMaximums[i], rightMaximums[i]) - height[i]
+        height.indices.sumOf { i ->
+            Math.min(leftMaximums[i], rightMaximums[i]) - height[i]
+        }
     }
-}
 
 // This is "running reduce"!
 // runningMaximum[0] = height[0]
