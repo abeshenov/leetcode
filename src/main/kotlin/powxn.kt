@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/powx-n/
+//      title: Pow(x,n)
+//        url: https://leetcode.com/problems/powx-n/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun myPow(x: Double, n: Int): Double =
     when {

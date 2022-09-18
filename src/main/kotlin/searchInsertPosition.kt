@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/search-insert-position/
+//      title: Search Insert Position
+//        url: https://leetcode.com/problems/search-insert-position/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun searchInsert(nums: IntArray, target: Int): Int {
     var left = 0

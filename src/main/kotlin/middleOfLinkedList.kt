@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/middle-of-the-linked-list/
+//      title: Middle of the Linked List
+//        url: https://leetcode.com/problems/middle-of-the-linked-list/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun middleNode(head: ListNode?): ListNode? {
     var iter: ListNode? = head

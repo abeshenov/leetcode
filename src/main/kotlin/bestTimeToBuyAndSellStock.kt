@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+//      title: Best Time to Buy and Sell Stock
+//        url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun maxProfit(prices: IntArray): Int {
     var lowestPrice = prices[0]

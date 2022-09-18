@@ -1,5 +1,8 @@
-// 2022-09-04
-// https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+//       date: 2022-09-04
+//      title: Vertical Order Traversal of a Binary Tree
+//        url: https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+// difficulty: hard
+//------------------------------------------------------------------------------
 
 import java.util.TreeMap
 

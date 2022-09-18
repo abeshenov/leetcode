@@ -1,4 +1,8 @@
-// https://leetcode.com/problems/remove-element/
+//       date:
+//      title: Remove Element
+//        url: https://leetcode.com/problems/remove-element/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun removeElement(nums: IntArray, `val`: Int): Int {
     var i = 0

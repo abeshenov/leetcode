@@ -1,5 +1,8 @@
-// 2022-09-13
-// https://leetcode.com/problems/utf-8-validation/
+//       date: 2022-09-13
+//      title: UTF-8 Validation
+//        url: https://leetcode.com/problems/utf-8-validation/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 //    Number of Bytes  |        UTF-8 Octet Sequence
 //                     |              (binary)

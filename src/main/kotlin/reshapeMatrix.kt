@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/reshape-the-matrix/
+//      title: Reshape the Matrix
+//        url: https://leetcode.com/problems/reshape-the-matrix/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun matrixReshape(mat: Array<IntArray>, r: Int, c: Int): Array<IntArray> {
     val matR = mat.size

@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/delete-node-in-a-linked-list/
+//      title: Delete Node in a Linked List
+//        url: https://leetcode.com/problems/delete-node-in-a-linked-list/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun deleteNode(node: ListNode) {
     if (node.next != null) {  // always the case for this problem

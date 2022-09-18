@@ -1,5 +1,8 @@
-// 2022-09-17
-// https://leetcode.com/problems/palindrome-pairs/
+//       date: 2022-09-17
+//      title: Palindrome Pairs
+//        url: https://leetcode.com/problems/palindrome-pairs/
+// difficulty: hard
+//------------------------------------------------------------------------------
 
 fun palindromePairs(words: Array<String>): List<List<Int>> =
     Helper(words).calculate()

@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/merge-two-sorted-lists/
+//      title: Merge Two Sorted Lists
+//        url: https://leetcode.com/problems/merge-two-sorted-lists/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
     if (list1 == null) {

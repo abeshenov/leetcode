@@ -1,5 +1,8 @@
-// 2022-09-11
-// https://leetcode.com/problems/maximum-performance-of-a-team/
+//       date: 2022-09-11
+//      title: Maximum Performance of a Team
+//        url: https://leetcode.com/problems/maximum-performance-of-a-team/
+// difficulty: hard
+//------------------------------------------------------------------------------
 
 import java.util.PriorityQueue
 

@@ -1,5 +1,8 @@
-// 2022-09-10
-// https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+//       date: 2022-09-10
+//      title: Best Time to Buy and Sell Stock IV
+//        url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+// difficulty: hard
+//------------------------------------------------------------------------------
 
 fun maxProfit(k: Int, prices: IntArray): Int {
     // If there are zero days, we may return 0:

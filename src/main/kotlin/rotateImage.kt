@@ -1,14 +1,15 @@
-// https://leetcode.com/problems/rotate-image/
+//      title: Rotate Image
+//        url: https://leetcode.com/problems/rotate-image/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
+// The idea is to transpose and then flip columns:
+// 1 2 3       1 4 7       7 4 1
+// 4 5 6  -->  2 5 8  -->  8 5 2
+// 7 8 9       3 6 9       9 6 3
 fun rotate(matrix: Array<IntArray>) {
-    // Transpose and flip:
-
-    // 1 2 3       1 4 7       7 4 1
-    // 4 5 6  -->  2 5 8  -->  8 5 2
-    // 7 8 9       3 6 9       9 6 3
-
     transpose(matrix)
-    flip(matrix)
+    flipColumns(matrix)
 }
 
 private fun transpose(matrix: Array<IntArray>) {
@@ -21,7 +22,7 @@ private fun transpose(matrix: Array<IntArray>) {
     }
 }
 
-private fun flip(matrix: Array<IntArray>) {
+private fun flipColumns(matrix: Array<IntArray>) {
     for (i in matrix.indices) {
         var j = 0
         var k = matrix[i].lastIndex

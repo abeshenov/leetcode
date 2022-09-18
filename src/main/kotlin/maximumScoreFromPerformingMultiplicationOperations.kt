@@ -1,5 +1,8 @@
-// 2022-09-16
-// https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/
+//       date: 2022-09-16
+//      title: Maximum Score from Performing Multiplication Operations
+//        url: https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun maximumScore(nums: IntArray, multipliers: IntArray): Int =
     DpHelper(nums, multipliers).calculate()

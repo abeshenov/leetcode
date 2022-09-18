@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/sqrtx/
+//      title: Sqrt(x)
+//        url: https://leetcode.com/problems/sqrtx/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun mySqrt(x: Int): Int {
     if (x == 0) {

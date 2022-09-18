@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/backspace-string-compare/
+//      title: Backspace String Compare
+//        url: https://leetcode.com/problems/backspace-string-compare/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun backspaceCompare(s: String, t: String): Boolean =
     s.applyBackspace() == t.applyBackspace()
@@ -18,6 +21,8 @@ private fun String.applyBackspace(backspaceChar: Char = '#'): String {
 
     return sb.toString()
 }
+
+//------------------------------------------------------------------------------
 
 // A variation: reverse the string, use sequences
 fun backspaceCompareSeq(s: String, t: String): Boolean =

@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/valid-parentheses/
+//      title: Valid Parentheses
+//        url: https://leetcode.com/problems/valid-parentheses/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 import java.util.Stack
 

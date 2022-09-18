@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/contains-duplicate/
+//      title: Contains Duplicate
+//        url: https://leetcode.com/problems/contains-duplicate/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun containsDuplicate(nums: IntArray): Boolean {
     val numSet: MutableSet<Int> = mutableSetOf()

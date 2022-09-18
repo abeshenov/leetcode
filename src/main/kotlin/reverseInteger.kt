@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/reverse-integer/
+//      title: Reverse Integer
+//        url: https://leetcode.com/problems/reverse-integer/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun reverse(x: Int): Int {
     var num = x

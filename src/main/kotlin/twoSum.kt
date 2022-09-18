@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/two-sum/
+//      title: Two Sum
+//        url: https://leetcode.com/problems/two-sum/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun twoSum(nums: IntArray, target: Int): IntArray {
     val indices: MutableMap<Int, Int> = mutableMapOf()

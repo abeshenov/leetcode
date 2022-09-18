@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/pascals-triangle/
+//      title: Pascal's Triangle
+//        url: https://leetcode.com/problems/pascals-triangle/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun generate(numRows: Int): List<List<Int>> =
     generateRec(numRows, listOf(1))

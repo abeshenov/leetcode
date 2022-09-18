@@ -1,5 +1,8 @@
-// 2022-09-15
-// https://leetcode.com/problems/find-original-array-from-doubled-array/
+//       date: 2022-09-15
+//      title: Find Original Array From Doubled Array
+//        url: https://leetcode.com/problems/find-original-array-from-doubled-array/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun findOriginalArray(changed: IntArray): IntArray {
     if (changed.size % 2 != 0) {

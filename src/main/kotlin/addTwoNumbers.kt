@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/add-two-numbers/
+//      title: Add Two Numbers
+//        url: https://leetcode.com/problems/add-two-numbers/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
     val head = ListNode(0)

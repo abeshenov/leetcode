@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/palindrome-linked-list/
+//      title: Palindrome Linked List
+//        url: https://leetcode.com/problems/palindrome-linked-list/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 // Reusing reverseLinkedList.kt and middleOfLinkedList.kt:
 fun isPalindrome(head: ListNode?): Boolean =

@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+//      title: Remove Nth Node From End of List
+//        url: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
     var iter: ListNode? = head

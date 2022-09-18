@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/first-bad-version/
+//      title: First Bad Version
+//        url: https://leetcode.com/problems/first-bad-version/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 abstract class VersionControl {
     abstract fun firstBadVersion(n: Int): Int

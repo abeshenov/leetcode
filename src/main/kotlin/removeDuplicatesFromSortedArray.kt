@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+//      title: Remove Duplicates from Sorted Array
+//        url: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun removeDuplicates(nums: IntArray): Int {
     var i = 0

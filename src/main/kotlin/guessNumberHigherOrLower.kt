@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/guess-number-higher-or-lower/
+//      title: Guess Number Higher or Lower
+//        url: https://leetcode.com/problems/guess-number-higher-or-lower/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 abstract class GuessGame {
     abstract fun guessNumber(n: Int): Int

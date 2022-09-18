@@ -1,5 +1,8 @@
-// 2022-09-14
-// https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/
+//       date: 2022-09-14
+//      title: Pseudo-Palindromic Paths in a Binary Tree
+//        url: https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun pseudoPalindromicPaths (root: TreeNode?): Int =
     countHelper(root)

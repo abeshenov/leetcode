@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/power-of-four/
+//      title: Power of Four
+//        url: https://leetcode.com/problems/power-of-four/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun isPowerOfFour(n: Int): Boolean {
     if (n <= 0) {

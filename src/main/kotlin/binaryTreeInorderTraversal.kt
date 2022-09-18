@@ -1,5 +1,8 @@
-// 2022-09-08
-// https://leetcode.com/problems/binary-tree-inorder-traversal/
+//       date: 2022-09-08
+//      title: Binary Tree Inorder Traversal
+//        url: https://leetcode.com/problems/binary-tree-inorder-traversal/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun inorderTraversal(root: TreeNode?): List<Int> =
     if (root == null) {

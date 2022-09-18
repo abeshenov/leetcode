@@ -1,5 +1,8 @@
-// 2022-09-05
-// https://leetcode.com/problems/n-ary-tree-level-order-traversal/
+//       date: 2022-09-05
+//      title: N-ary Tree Level Order Traversal
+//        url: https://leetcode.com/problems/n-ary-tree-level-order-traversal/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun levelOrder(root: Node?): List<List<Int>> =
     levelOrderHelper(listOfNotNull(root))

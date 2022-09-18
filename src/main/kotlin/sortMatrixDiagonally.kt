@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/sort-the-matrix-diagonally/
+//      title: Sort the Matrix Diagonally
+//        url: https://leetcode.com/problems/sort-the-matrix-diagonally/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun diagonalSort(mat: Array<IntArray>): Array<IntArray> {
     val rows = mat.size

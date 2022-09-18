@@ -1,7 +1,8 @@
-// 2022-09-02
-// https://leetcode.com/problems/average-of-levels-in-binary-tree/
-
-// Functional style :-)
+//       date: 2022-09-02
+//      title: Average of Levels in Binary Tree
+//        url: https://leetcode.com/problems/average-of-levels-in-binary-tree/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun averageOfLevels(root: TreeNode?): DoubleArray =
     getLevels(root)

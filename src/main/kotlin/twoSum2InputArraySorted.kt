@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+//      title: Two Sum II - Input Array Is Sorted
+//        url: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun twoSumSorted(numbers: IntArray, target: Int): IntArray {
     var left = 0

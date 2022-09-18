@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/move-zeroes/
+//      title: Move Zeroes
+//        url: https://leetcode.com/problems/move-zeroes/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun moveZeroes(nums: IntArray) {
     var nextNonZero = 0

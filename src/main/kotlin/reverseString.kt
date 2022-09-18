@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/reverse-string/
+//      title: Reverse String
+//        url: https://leetcode.com/problems/reverse-string/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun reverseString(s: CharArray) {
     var left = 0

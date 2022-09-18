@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/number-of-1-bits/
+//      title: Number of 1 Bits
+//        url: https://leetcode.com/problems/number-of-1-bits/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun hammingWeight(n: Int): Int {
     var bitCount = 0

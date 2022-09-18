@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/valid-perfect-square/
+//      title: Valid Perfect Square
+//        url: https://leetcode.com/problems/valid-perfect-square/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun isPerfectSquare(num: Int): Boolean {
     var lower = 0

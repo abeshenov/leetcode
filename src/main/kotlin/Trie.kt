@@ -1,4 +1,6 @@
-// https://leetcode.com/problems/implement-trie-prefix-tree/
+//      title: Implement Trie (Prefix Tree)
+//        url: https://leetcode.com/problems/implement-trie-prefix-tree/
+// difficulty: medium
 
 class Trie {
     private val root: TrieNode = TrieNode()

@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/valid-sudoku/
+//      title: Valid Sudoku
+//        url: https://leetcode.com/problems/valid-sudoku/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun isValidSudoku(board: Array<CharArray>): Boolean =
     isValidRows(board) && isValidColumns(board) && isValidBlocks(board)

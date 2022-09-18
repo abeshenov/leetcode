@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/valid-palindrome/
+//      title: Valid Palindrome
+//        url: https://leetcode.com/problems/valid-palindrome/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun isPalindrome(s: String): Boolean {
     var left = 0

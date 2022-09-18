@@ -1,5 +1,8 @@
-// 2022-09-03
-// https://leetcode.com/problems/numbers-with-same-consecutive-differences/
+//       date: 2022-09-03
+//      title: Numbers With Same Consecutive Differences
+//        url: https://leetcode.com/problems/numbers-with-same-consecutive-differences/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun numsSameConsecDiff(n: Int, k: Int): IntArray =
     (1..9).flatMap { numsSameConsecDiffHelper(it, n, k) }

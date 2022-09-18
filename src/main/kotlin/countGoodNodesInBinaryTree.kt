@@ -1,5 +1,8 @@
-// 2022-09-01
-// https://leetcode.com/problems/count-good-nodes-in-binary-tree/
+//       date: 2022-09-01
+//      title: Count Good Nodes in Binary Tree
+//        url: https://leetcode.com/problems/count-good-nodes-in-binary-tree/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun goodNodes(root: TreeNode?): Int =
     goodNodesRec(Integer.MIN_VALUE, root)

@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
+//      title: Group the People Given the Group Size They Belong To
+//        url: https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun groupThePeople(groupSizes: IntArray): List<List<Int>> =
     peopleByGroupSize(groupSizes)

@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/missing-number/
+//      title: Missing Number
+//        url: https://leetcode.com/problems/missing-number/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 // 1 + 2 + ... + n = n * (n + 1) / 2
 fun missingNumber(nums: IntArray): Int =

@@ -1,5 +1,8 @@
-// 2022-09-12
-// https://leetcode.com/problems/bag-of-tokens/
+//       date: 2022-09-12
+//      title: Bag of Tokens
+//        url: https://leetcode.com/problems/bag-of-tokens/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 import java.util.LinkedList
 

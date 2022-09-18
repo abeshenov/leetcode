@@ -1,5 +1,8 @@
-// 2022-09-06
-// https://leetcode.com/problems/binary-tree-pruning/
+//       date: 2022-09-06
+//      title: Binary Tree Pruning
+//        url: https://leetcode.com/problems/binary-tree-pruning/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun pruneTree(root: TreeNode?): TreeNode? {
     if (root == null || !containsOne(root)) {

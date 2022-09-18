@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/power-of-three/
+//      title: Power of Three
+//        url: https://leetcode.com/problems/power-of-three/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun isPowerOfThree(n: Int): Boolean {
     if (n <= 0) {

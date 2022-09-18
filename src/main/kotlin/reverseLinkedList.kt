@@ -1,4 +1,8 @@
-// https://leetcode.com/problems/reverse-linked-list/
+//       date:
+//      title: Reverse Linked List
+//        url: https://leetcode.com/problems/reverse-linked-list/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 // Clever solution:
 fun reverseList(head: ListNode?): ListNode? {
@@ -24,6 +28,7 @@ fun reverseList(head: ListNode?): ListNode? {
 //   Step 3: 3 -> 2 -> 1 -> None, 4 -> None
 //   Step 4: 4 -> 3 -> 2 -> 1 -> None
 
+//------------------------------------------------------------------------------
 
 fun reverseListRecursive(head: ListNode?): ListNode? =
     when (head) {

@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/maximum-subarray/
+//      title: Maximum Subarray
+//        url: https://leetcode.com/problems/maximum-subarray/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 // https://en.wikipedia.org/wiki/Maximum_subarray_problem
 fun maxSubArray(nums: IntArray): Int {

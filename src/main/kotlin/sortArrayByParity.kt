@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/sort-array-by-parity/submissions/
+//      title: Sort Array By Parity
+//        url: https://leetcode.com/problems/sort-array-by-parity/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 import kotlin.math.absoluteValue
 

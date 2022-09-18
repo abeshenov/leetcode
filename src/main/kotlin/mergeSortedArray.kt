@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/merge-sorted-array/
+//      title: Merge Sorted Array
+//        url: https://leetcode.com/problems/merge-sorted-array/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
     var i = m - 1

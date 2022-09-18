@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/binary-search/
+//      title: Binary Search
+//        url: https://leetcode.com/problems/binary-search/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun search(nums: IntArray, target: Int): Int {
     var left = 0

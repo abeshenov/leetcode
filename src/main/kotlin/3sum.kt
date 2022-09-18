@@ -1,4 +1,8 @@
-// https://leetcode.com/problems/3sum/
+//      title: 3Sum
+//        url: https://leetcode.com/problems/3sum/
+// difficulty: medium
+//------------------------------------------------------------------------------
+
 
 fun threeSum(nums: IntArray): List<List<Int>> {
     nums.sort()

@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/n-th-tribonacci-number/
+//      title: N-th Tribonacci Number
+//        url: https://leetcode.com/problems/n-th-tribonacci-number/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun tribonacci(n: Int): Int {
     when (n) {

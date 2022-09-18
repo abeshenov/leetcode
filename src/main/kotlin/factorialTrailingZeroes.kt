@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/factorial-trailing-zeroes/
+//      title: Factorial Trailing Zeroes
+//        url: https://leetcode.com/problems/factorial-trailing-zeroes/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun trailingZeroes(n: Int): Int =
     Math.min(legendre(n, 2), legendre(n, 5))

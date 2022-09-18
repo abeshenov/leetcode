@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/number-of-good-pairs/
+//      title: Number of Good Pairs
+//        url: https://leetcode.com/problems/number-of-good-pairs/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun numIdenticalPairs(nums: IntArray) =
     frequencies(nums).values.sumOf { fr -> (fr * (fr - 1)) / 2 }

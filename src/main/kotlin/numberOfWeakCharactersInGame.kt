@@ -1,5 +1,8 @@
-// 2022-09-09
-// https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/
+//       date: 2022-09-09
+//      title: The Number of Weak Characters in the Game
+//        url: https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 // Shorter / quicker in-place version
 fun numberOfWeakCharactersInPlace(properties: Array<IntArray>): Int {

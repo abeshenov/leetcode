@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/intersection-of-two-arrays-ii/
+//      title: Intersection of Two Arrays II
+//        url: https://leetcode.com/problems/intersection-of-two-arrays-ii/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun intersect(nums1: IntArray, nums2: IntArray): IntArray =
     toIntArray(frequencyIntersection(frequencies(nums1), frequencies(nums2)))

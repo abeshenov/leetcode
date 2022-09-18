@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/squares-of-a-sorted-array/
+//      title: Squares of a Sorted Array
+//        url: https://leetcode.com/problems/squares-of-a-sorted-array/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun sortedSquares(nums: IntArray): IntArray {
     val result = IntArray(nums.size)

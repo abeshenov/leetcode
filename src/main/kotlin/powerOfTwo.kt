@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/power-of-two/
+//      title: Power of Two
+//        url: https://leetcode.com/problems/power-of-two/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun isPowerOfTwo(n: Int): Boolean {
     if (n <= 0) {

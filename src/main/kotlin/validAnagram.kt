@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/valid-anagram/
+//      title: Valid Anagram
+//        url: https://leetcode.com/problems/valid-anagram/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun isAnagram(s: String, t: String): Boolean =
     s.length == t.length && letterFrequencies(s) contentEquals letterFrequencies(t)

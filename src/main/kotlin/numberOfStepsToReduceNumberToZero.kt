@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
+//      title: Number of Steps to Reduce a Number to Zero
+//        url: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun numberOfSteps(num: Int): Int =
     numberOfStepsHelper(num)

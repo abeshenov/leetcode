@@ -1,5 +1,8 @@
-// 2022-09-07
-// https://leetcode.com/problems/construct-string-from-binary-tree/
+//       date: 2022-09-07
+//      title: Construct String from Binary Tree
+//        url: https://leetcode.com/problems/construct-string-from-binary-tree/
+// difficulty: easy
+//------------------------------------------------------------------------------
 
 fun tree2str(root: TreeNode?): String =
     when {

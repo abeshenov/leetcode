@@ -1,4 +1,7 @@
-// https://leetcode.com/problems/combination-sum/
+//      title: Combination Sum
+//        url: https://leetcode.com/problems/combination-sum/
+// difficulty: medium
+//------------------------------------------------------------------------------
 
 fun combinationSum(candidates: IntArray, target: Int): List<List<Int>> =
     CombinationHelper(candidates, target).result
