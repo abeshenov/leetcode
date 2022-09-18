@@ -1,5 +1,5 @@
 // 2022-09-18
-// https://leetcode.com/problems/trapping-rain-water/submissions/
+// https://leetcode.com/problems/trapping-rain-water/
 
 // Note that an element height[i] will trap
 // min(max(height[0..i]), max(height[i..])) - height[i]
