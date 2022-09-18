@@ -30,9 +30,9 @@ fun trap(height: IntArray): Int {
     val leftMaximums = leftMaximums(height)
     val rightMaximums = rightMaximums(height)
 
-    return height.indices.map { i ->
+    return height.indices.sumOf { i ->
         Math.min(leftMaximums[i], rightMaximums[i]) - height[i]
-    }.sum()
+    }
 }
 
 // This is "running reduce"!
