@@ -26,17 +26,14 @@ private fun List<Int>.max(): Int =
 //   leftMaximums  := height.slice(0..i).max()
 //   rightMaximums := height.slice(i..height.lastIndex).max()
 
-fun trap(height: IntArray): Int =
-    if (height.isEmpty()) {
-        0
-    } else {
-        val leftMaximums = leftMaximums(height)
-        val rightMaximums = rightMaximums(height)
+fun trap(height: IntArray): Int {
+    val leftMaximums = leftMaximums(height)
+    val rightMaximums = rightMaximums(height)
 
-        height.indices.sumOf { i ->
-            Math.min(leftMaximums[i], rightMaximums[i]) - height[i]
-        }
-    }
+    return height.indices.map { i ->
+        Math.min(leftMaximums[i], rightMaximums[i]) - height[i]
+    }.sum()
+}
 
 // This is "running reduce"!
 // runningMaximum[0] = height[0]
