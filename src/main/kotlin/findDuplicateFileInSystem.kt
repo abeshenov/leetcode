@@ -12,7 +12,7 @@ private class DuplicateHelper(paths: Array<String>) {
     val contentsMap: MutableMap<String, MutableList<String>> = mutableMapOf()
 
     init {
-        paths.forEach { registerEntry(it) }
+        paths.forEach(::registerEntry)
     }
 
     fun duplicates(): List<List<String>> =
