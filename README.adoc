@@ -18,6 +18,7 @@
 - link:src/main/kotlin/maximumScoreFromPerformingMultiplicationOperations.kt[2022-09-16: Maximum Score from Performing Multiplication Operations]
 - link:src/main/kotlin/palindromePairs.kt[2022-09-17: Palindrome Pairs]
 - link:src/main/kotlin/trappingRainWater.kt[2022-09-18: Trapping Rain Water]
+- link:src/main/kotlin/findDuplicateFileInSystem.kt[2022-09-19: Find Duplicate File in System]
 
 
 == Basic data structures
