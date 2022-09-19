@@ -9,7 +9,7 @@ fun findDuplicate(paths: Array<String>): List<List<String>> =
 
 private class DuplicateHelper(paths: Array<String>) {
     // Will store (content) --> (list of full paths with given content)
-    val contentsMap: MutableMap<String,MutableList<String>> = mutableMapOf()
+    val contentsMap: MutableMap<String, MutableList<String>> = mutableMapOf()
 
     init {
         paths.forEach { registerEntry(it) }
@@ -27,8 +27,10 @@ private class DuplicateHelper(paths: Array<String>) {
         val rootDir = fields[0]
 
         for (fieldText in fields.slice(1..fields.lastIndex)) {
-            val field = splitField(fieldText)
-            registerEntry(rootDir + "/" + field.fileName, field.contents)
+            val field = Regex("(.+)\\((.+)\\)")
+                .matchEntire(fieldText)!!.groupValues
+
+            registerEntry(rootDir + "/" + field[1], field[2])
         }
     }
 
@@ -37,25 +39,4 @@ private class DuplicateHelper(paths: Array<String>) {
         contentsMap[contents]!!.add(path)
     }
 
-    data class Field(val fileName: String, val contents: String)
-
-    private fun splitField(fieldText: String): Field {
-        val fileName = StringBuilder()
-        val contents = StringBuilder()
-        var isInPathPart = true
-
-        for (chr in fieldText) {
-            if (chr == '(') {
-                isInPathPart = false
-            }
-
-            if (isInPathPart) {
-                fileName.append(chr)
-            } else {
-                contents.append(chr)
-            }
-        }
-
-        return Field(fileName.toString(), contents.toString())
-    }
 }
