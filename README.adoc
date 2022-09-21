@@ -20,6 +20,7 @@
 - link:src/main/kotlin/trappingRainWater.kt[2022-09-18: Trapping Rain Water]
 - link:src/main/kotlin/findDuplicateFileInSystem.kt[2022-09-19: Find Duplicate File in System]
 - link:src/main/kotlin/maximumLengthOfRepeatedSubarray.kt[2022-09-20: Maximum Length of Repeated Subarray]
+- link:src/main/kotlin/sumOfEvenNumbersAfterQueries.kt[2022-09-21: Sum of Even Numbers After Queries]
 
 
 == Basic data structures
