@@ -1,3 +1,7 @@
+import java.lang.StringBuilder
+import java.util.LinkedList
+import java.util.Stack
+
 //       date: 2022-09-22
 //      title: Reverse Words in a String III
 //        url: https://leetcode.com/problems/reverse-words-in-a-string-iii/
@@ -7,6 +11,28 @@
 // This is cheating, but we can also reimplement things from scratch :-)
 fun reverseWords(s: String): String =
     s.split(" ").joinToString(" ") { it.reversed() }
+
+fun reverseWordsStack(s: String): String {
+    val charStack: Stack<Char> = Stack()
+    val result = StringBuilder()
+
+    for (chr in s) {
+        if (chr == ' ') {
+            while (charStack.isNotEmpty()) {
+                result.append(charStack.pop())
+            }
+            result.append(chr)
+        } else {
+            charStack.push(chr)
+        }
+    }
+
+    while (charStack.isNotEmpty()) {
+        result.append(charStack.pop())
+    }
+
+    return result.toString()
+}
 
 // Two pointer approach
 fun reverseWordsTwoPointers(s: String): String {
