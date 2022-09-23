@@ -59,20 +59,8 @@ private class Helper(val words: Array<String>) {
     //--------------------------------------------------------------------------
 
     // Checks if the word is palindrome in the interval (i..j)
-    private fun String.isPalindrome(start: Int, end: Int): Boolean {
-        var left = start
-        var right = end
-
-        while (left < right) {
-            if (get(left) != get(right)) {
-                return false
-            }
-            left++
-            right--
-        }
-
-        return true
-    }
+    private fun String.isPalindrome(start: Int, end: Int): Boolean =
+        start >= end || (get(start) == get(end) && isPalindrome(start + 1, end - 1))
 
     private fun String.isPalindromeUpTo(end: Int): Boolean =
         isPalindrome(0, end)
