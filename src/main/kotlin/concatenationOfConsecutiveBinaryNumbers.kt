@@ -4,9 +4,12 @@
 // difficulty: medium
 //------------------------------------------------------------------------------
 
+import kotlin.math.floor
+import kotlin.math.log2
+
 // The recursion is
 //   a(1) = 1,
-//   a(i) = a(i-1) * 2^bd(i) + i  for  i > 2.
+//   a(i) = a(i-1) * 2^bd(i) + i  for  i >= 2.
 
 // Here bd(i) is the number of binary digits in i.
 // It can be calculated with
@@ -27,6 +30,25 @@ fun concatenatedBinary(n: Int): Int {
     for (i in 2..n) {
         f[i] = (2 * f[i / 2]) % MODULUS
         a = ((a * f[i]) % MODULUS + i) % MODULUS
+    }
+
+    return a.toInt()
+}
+
+// In this case we can also calculate number of digits with 1 + floor(log2(i))
+fun concatenatedBinaryNoExtraMemory(n: Int): Int {
+    var a = 1L
+    var numberOfBinaryDigits = 1
+    var powerOfTwo = 2L
+
+    for (i in 2 .. n) {
+        val newNumberOfBinaryDigits = 1 + floor(log2(i * 1.0)).toInt()
+        if (newNumberOfBinaryDigits > numberOfBinaryDigits) {
+            powerOfTwo = (2 * powerOfTwo) % MODULUS
+            numberOfBinaryDigits = newNumberOfBinaryDigits
+        }
+
+        a = ((a * powerOfTwo) % MODULUS + i) % MODULUS
     }
 
     return a.toInt()
