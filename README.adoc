@@ -24,6 +24,7 @@
 - link:src/main/kotlin/reverseWordsInString3.kt[2022-09-22: Reverse Words in a String III]
 - link:src/main/kotlin/concatenationOfConsecutiveBinaryNumbers.kt[2022-09-23: Concatenation of Consecutive Binary Numbers]
 - link:src/main/kotlin/pathSum2.kt[2022-09-24: Path Sum II]
+- link:src/main/kotlin/designCircularQueue.kt[2022-09-25: Design Circular Queue]
 
 
 == Basic data structures
