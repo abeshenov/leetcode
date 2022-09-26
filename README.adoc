@@ -25,6 +25,7 @@
 - link:src/main/kotlin/concatenationOfConsecutiveBinaryNumbers.kt[2022-09-23: Concatenation of Consecutive Binary Numbers]
 - link:src/main/kotlin/pathSum2.kt[2022-09-24: Path Sum II]
 - link:src/main/kotlin/designCircularQueue.kt[2022-09-25: Design Circular Queue]
+- link:src/main/kotlin/satisfiabilityOfEqualityEquations.kt[2022-09-26: Satisfiability of Equality Equations]
 
 
 == Basic data structures
@@ -32,3 +33,4 @@
 - link:src/main/kotlin/ListNode.kt[Linked list]
 - link:src/main/kotlin/TreeNode.kt[Binary Tree]
 - link:src/main/kotlin/Trie.kt[Prefix tree (trie)]
+- link:src/main/kotlin/UnionFind.kt[Union-find (disjoint-set)]
