@@ -63,7 +63,7 @@ class UnionFind<T>(elements: Set<T>) {
 
     }
 
-    fun inSameSet(element1: T, element2: T): Boolean =
-        find(element1) == find(element2)
+    fun inSameSet(x: T, y: T): Boolean =
+        find(x) == find(y)
 
 }
