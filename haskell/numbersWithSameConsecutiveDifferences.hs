@@ -19,4 +19,4 @@ numsSameConsecDiffHelper numOfDigits k firstDigit =
     smallerNumbers =
       numsSameConsecDiffHelper (numOfDigits - 1) k (firstDigit + k) ++
       numsSameConsecDiffHelper (numOfDigits - 1) k (firstDigit - k)
-    addFirstDigit numOfDigits digit num = num + 10 ^ numOfDigits * digit
+    addFirstDigit numOfDigits digit num = num + 10^numOfDigits*digit
