@@ -5,7 +5,12 @@
 
 trap :: [Integer] -> Integer
 trap height =
-  sum (zipWith min (leftMaximums height) (rightMaximums height)) - sum height
+  sum $
+  zipWith3
+    (\x y z -> min x y - z)
+    (leftMaximums height)
+    (rightMaximums height)
+    height
 
 leftMaximums :: [Integer] -> [Integer]
 leftMaximums = scanl1 max
