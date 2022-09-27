@@ -26,9 +26,7 @@ transformGroup group =
     ('R', 'R') -> take len (repeat 'R')
     ('R', 'L') ->
       take (len `div` 2) (repeat 'R') ++
-      (if (odd len)
-         then "."
-         else "") ++
+      (if (odd len) then "." else "") ++
       take (len `div` 2) (repeat 'L')
   where
     len = length group
