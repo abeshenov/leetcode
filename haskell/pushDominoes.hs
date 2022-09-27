@@ -22,8 +22,8 @@ transformGroup :: [Char] -> [Char]
 transformGroup group =
   case (head group, last group) of
     ('L', 'R') -> group
-    ('L', 'L') -> take len (repeat 'L')
-    ('R', 'R') -> take len (repeat 'R')
+    ('L', 'L') -> take len $ repeat 'L'
+    ('R', 'R') -> take len $ repeat 'R'
     ('R', 'L') ->
       take (len `div` 2) (repeat 'R') ++
       (if (odd len) then "." else "") ++
@@ -32,4 +32,4 @@ transformGroup group =
     len = length group
 
 stitchGroups :: [[Char]] -> [Char]
-stitchGroups groups = init $ concatMap tail groups
+stitchGroups = init . concatMap tail
