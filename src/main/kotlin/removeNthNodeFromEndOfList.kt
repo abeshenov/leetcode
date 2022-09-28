@@ -1,3 +1,4 @@
+//       date: 2022-09-28
 //      title: Remove Nth Node From End of List
 //        url: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 // difficulty: medium
