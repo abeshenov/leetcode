@@ -7,10 +7,10 @@
 import           Data.Array    (Array, array, bounds, ixmap, listArray, (!))
 import           Data.Foldable (toList)
 
-
-findClosestElements :: Array Int Int -> Int -> Int -> [Int]
-findClosestElements arr k x = toList $ ixmap (left, left + k - 1) id arr
+findClosestElements :: [Int] -> Int -> Int -> [Int]
+findClosestElements nums k x = toList $ ixmap (left, left + k - 1) id arr
   where
+    arr = listArray (0, length nums - 1) nums
     left = closestBinSearch arr k x
 
 closestBinSearch :: Array Int Int -> Int -> Int -> Int
@@ -29,15 +29,12 @@ closestBinSearch' arr k x left right
   where
     mid = (left + right) `div` 2
 
-
-{--
-Some test cases from Leetcode:
-
+{-
 import Control.Exception.Base (assert)
 
-assert ([1,2,3,4] == findClosestElements (listArray (0,4) [1,2,3,4,5]) 4 3) ()
-assert ([1,2,3,4] == findClosestElements (listArray (0,4) [1,2,3,4,5]) 4 (-1)) ()
-assert ([3,6,8,8,9] == findClosestElements (listArray (0,9) [0,1,2,2,2,3,6,8,8,9]) 5 9) ()
-assert ([8,10] == findClosestElements (listArray (0,3) [3,5,8,10]) 2 15) ()
-assert ([10] == findClosestElements (listArray (0,5) [1,1,1,10,10,10]) 1 9) ()
---}
+assert ([1,2,3,4] == findClosestElements [1,2,3,4,5] 4 3) ()
+assert ([1,2,3,4] == findClosestElements [1,2,3,4,5] 4 (-1)) ()
+assert ([3,6,8,8,9] == findClosestElements [0,1,2,2,2,3,6,8,8,9] 5 9) ()
+assert ([8,10] == findClosestElements [3,5,8,10] 2 15) ()
+assert ([10] == findClosestElements [1,1,1,10,10,10] 1 9) ()
+-}
