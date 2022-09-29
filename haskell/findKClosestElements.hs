@@ -30,12 +30,6 @@ closestBinSearch_ arr k x left right
   where
     mid = (left + right) `div` 2
 
-assertEquals :: Eq a => a -> a -> Bool
-assertEquals expected actual =
-  if (expected == actual)
-    then True
-    else error "assertion failed!"
-
 
 {--
 Some test cases from Leetcode:
