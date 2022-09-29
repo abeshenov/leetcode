@@ -19,7 +19,6 @@ closestBinSearch arr k x =
   where
     (lowerBound, upperBound) = bounds arr
 
-
 -- Binary search in Haskell
 closestBinSearch_ :: Array Int Int -> Int -> Int -> Int -> Int -> Int
 closestBinSearch_ arr k x left right
