@@ -15,17 +15,17 @@ findClosestElements arr k x = toList $ ixmap (left, left + k - 1) id arr
 
 closestBinSearch :: Array Int Int -> Int -> Int -> Int
 closestBinSearch arr k x =
-  closestBinSearch_ arr k x lowerBound (upperBound - k + 1)
+  closestBinSearch' arr k x lowerBound (upperBound - k + 1)
   where
     (lowerBound, upperBound) = bounds arr
 
 -- Binary search in Haskell
-closestBinSearch_ :: Array Int Int -> Int -> Int -> Int -> Int -> Int
-closestBinSearch_ arr k x left right
+closestBinSearch' :: Array Int Int -> Int -> Int -> Int -> Int -> Int
+closestBinSearch' arr k x left right
   | left >= right = left
   | x - (arr ! mid) > (arr ! (mid + k)) - x =
-    closestBinSearch_ arr k x (mid + 1) right
-  | otherwise = closestBinSearch_ arr k x left mid
+    closestBinSearch' arr k x (mid + 1) right
+  | otherwise = closestBinSearch' arr k x left mid
   where
     mid = (left + right) `div` 2
 
