@@ -18,13 +18,12 @@ numsSameConsecDiff' numOfDigits k firstDigit =
     smallerNumbers =
       numsSameConsecDiff' (numOfDigits - 1) k (firstDigit + k) ++
       numsSameConsecDiff' (numOfDigits - 1) k (firstDigit - k)
-    addFirstDigit numOfDigits digit num = num + 10^numOfDigits*digit
+    addFirstDigit numOfDigits digit num = num + 10 ^ numOfDigits * digit
 
-
-{--
+{-
 import Data.List (sort)
 import Control.Exception.Base (assert)
 
 assert ([181,292,707,818,929] == (sort $ numsSameConsecDiff 3 7)) ()
 assert ([10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98] == (sort $ numsSameConsecDiff 2 1)) ()
---}
+-}

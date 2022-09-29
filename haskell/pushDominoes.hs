@@ -35,10 +35,9 @@ transformGroup group =
 stitchGroups :: [[Char]] -> [Char]
 stitchGroups = init . concatMap tail
 
-
-{--
+{-
 import Control.Exception.Base (assert)
 
 assert ("RR.L" == pushDominoes "RR.L") ()
 assert ("LL.RR.LLRRLL.." == pushDominoes ".L.R...LR..L..") ()
---}
+-}

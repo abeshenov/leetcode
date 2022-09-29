@@ -19,10 +19,9 @@ leftMaximums = scanl1 max
 rightMaximums :: [Integer] -> [Integer]
 rightMaximums = reverse . leftMaximums . reverse
 
-
-{--
+{-
 import Control.Exception.Base (assert)
 
 assert (6 == trap [0,1,0,2,1,0,1,3,2,1,2,1]) ()
 assert (9 == trap [4,2,0,3,2,5]) ()
---}
+-}
