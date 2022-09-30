@@ -1,0 +1,26 @@
+cabal-version:       >=1.10
+
+name:                leetcode-haskell
+version:             0.1.0.0
+-- synopsis:
+-- description:
+-- bug-reports:
+-- license:
+-- license-file:
+author:              Alexey Beshenov
+maintainer:          abeshenov@pasteursoft.com
+-- copyright:
+-- category:
+build-type:          Simple
+-- extra-source-files:  CHANGELOG.md
+
+executable haskell
+  main-is:             Main.hs
+  -- other-modules:
+  -- other-extensions:
+  build-depends:
+      base >=4.13 && <4.14,
+      array >=0.5.4.0,
+      HUnit >=1.6.2.0
+  -- hs-source-dirs:
+  default-language:    Haskell2010
