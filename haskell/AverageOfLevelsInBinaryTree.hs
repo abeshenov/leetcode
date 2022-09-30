@@ -3,7 +3,9 @@
 --        url: https://leetcode.com/problems/average-of-levels-in-binary-tree/
 -- difficulty: easy
 --------------------------------------------------------------------------------
-module AverageOfLevelsInBinaryTree where
+module AverageOfLevelsInBinaryTree
+  ( averageOfLevels
+  ) where
 
 import           BinaryTree
 

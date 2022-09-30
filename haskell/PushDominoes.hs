@@ -3,7 +3,7 @@
 --        url: https://leetcode.com/problems/push-dominoes/
 -- difficulty: medium
 --------------------------------------------------------------------------------
-module PushDominoes where
+module PushDominoes (pushDominoes) where
 
 pushDominoes :: [Char] -> [Char]
 pushDominoes = stitchGroups . map transformGroup . splitGroups . decorate

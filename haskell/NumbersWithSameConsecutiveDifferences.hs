@@ -3,7 +3,7 @@
 --        url: https://leetcode.com/problems/numbers-with-same-consecutive-differences/
 -- difficulty: medium
 --------------------------------------------------------------------------------
-module NumbersWithSameConsecutiveDifferences where
+module NumbersWithSameConsecutiveDifferences (numsSameConsecDiff) where
 
 numsSameConsecDiff :: Integer -> Integer -> [Integer]
 numsSameConsecDiff n k = concatMap (numsSameConsecDiff' n k) [1 .. 9]

@@ -3,7 +3,7 @@
 --        url: https://leetcode.com/problems/trapping-rain-water/
 -- difficulty: hard
 --------------------------------------------------------------------------------
-module TrappingRainWater where
+module TrappingRainWater (trap) where
 
 trap :: [Integer] -> Integer
 trap height =

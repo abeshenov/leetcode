@@ -3,7 +3,7 @@
 --        url: https://leetcode.com/problems/find-k-closest-elements/
 -- difficulty: medium
 --------------------------------------------------------------------------------
-module FindKClosestElements where
+module FindKClosestElements (findClosestElements) where
 
 import           Data.Array    (Array, array, bounds, ixmap, listArray, (!))
 import           Data.Foldable (toList)

@@ -1,14 +1,14 @@
 module Main where
 
-import           AverageOfLevelsInBinaryTree           (averageOfLevels)
+import           AverageOfLevelsInBinaryTree
 import           BinaryTree
 import           Data.List                             (sort)
-import           FindKClosestElements                  (findClosestElements)
-import           NumbersWithSameConsecutiveDifferences (numsSameConsecDiff)
-import           PushDominoes                          (pushDominoes)
-import           SkylineProblem                        (Building (..), Point (..), getSkyline)
+import           FindKClosestElements
+import           NumbersWithSameConsecutiveDifferences
+import           PushDominoes
+import           SkylineProblem
 import           Test.HUnit
-import           TrappingRainWater                     (trap)
+import           TrappingRainWater
 
 averageOfLevelsInBinaryTreeTests :: Test
 averageOfLevelsInBinaryTreeTests =

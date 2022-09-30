@@ -3,7 +3,7 @@
 --        url: https://leetcode.com/problems/the-skyline-problem/
 -- difficulty: hard
 --------------------------------------------------------------------------------
-module SkylineProblem where
+module SkylineProblem (Building (..), Point (..), getSkyline) where
 
 import           Data.Array (Array, array, bounds, ixmap, listArray, (!))
 
