@@ -29,6 +29,7 @@
 - link:src/main/kotlin/pushDominoes.kt[2022-09-27: Push Dominoes]
 - link:src/main/kotlin/removeNthNodeFromEndOfList.kt[2022-09-28: Remove Nth Node From End of List]
 - link:src/main/kotlin/findKClosestElements.kt[2022-09-29: Find k closest elements]
+- link:src/main/kotlin/skylineProblem.kt[2022-09-30: The Skyline Problem]
 
 
 == Basic data structures
