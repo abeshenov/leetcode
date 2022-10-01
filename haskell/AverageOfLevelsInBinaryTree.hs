@@ -3,9 +3,13 @@
 --        url: https://leetcode.com/problems/average-of-levels-in-binary-tree/
 -- difficulty: easy
 --------------------------------------------------------------------------------
-module AverageOfLevelsInBinaryTree (averageOfLevels) where
+module AverageOfLevelsInBinaryTree
+  ( averageOfLevels
+  , averageOfLevelsTests
+  ) where
 
 import           BinaryTree
+import           Test.HUnit
 
 averageOfLevels :: BinaryTree Int -> [Double]
 averageOfLevels = map average . treeLevels
@@ -30,3 +34,27 @@ treeNodeValue (TreeNode x _ _) = x
 
 average :: [Int] -> Double
 average xs = fromIntegral (sum xs) / fromIntegral (length xs)
+
+averageOfLevelsTests :: Test
+averageOfLevelsTests =
+  TestList
+    [ TestCase $ assertEqual "" [3.0, 14.5, 11.0] $ averageOfLevels testTree1
+    , TestCase $ assertEqual "" [3.0, 14.5, 11.0] $ averageOfLevels testTree2
+    ]
+  where
+    testTree1 =
+      TreeNode
+        3
+        (TreeNode 9 EmptyTree EmptyTree)
+        (TreeNode
+           20
+           (TreeNode 15 EmptyTree EmptyTree)
+           (TreeNode 7 EmptyTree EmptyTree))
+    testTree2 =
+      TreeNode
+        3
+        (TreeNode
+           9
+           (TreeNode 15 EmptyTree EmptyTree)
+           (TreeNode 7 EmptyTree EmptyTree))
+        (TreeNode 20 EmptyTree EmptyTree)

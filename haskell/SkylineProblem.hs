@@ -3,9 +3,16 @@
 --        url: https://leetcode.com/problems/the-skyline-problem/
 -- difficulty: hard
 --------------------------------------------------------------------------------
-module SkylineProblem (Building (..), Point (..), getSkyline) where
+module SkylineProblem
+  ( Building(..)
+  , Point(..)
+  , getSkyline
+  , getSkylineTests
+  ) where
 
 import           Data.Array (Array, array, bounds, ixmap, listArray, (!))
+
+import           Test.HUnit
 
 data Point =
   Point Int Int
@@ -69,3 +76,29 @@ mergeSkylines' firstList firstH secondList secondH =
       | firstX > secondX = (firstList, firstH, secondTail, secondY)
       | firstX < secondX = (firstTail, firstY, secondList, secondH)
       | firstX == secondX = (firstTail, firstY, secondTail, secondY)
+
+getSkylineTests :: Test
+getSkylineTests =
+  TestList
+    [ TestCase $ assertEqual "" expectedSkyline1 $ getSkyline buildings1
+    , TestCase $ assertEqual "" expectedSkyline2 $ getSkyline buildings2
+    ]
+  where
+    buildings1 =
+      [ Building 2 9 10
+      , Building 3 7 15
+      , Building 5 12 12
+      , Building 15 20 10
+      , Building 19 24 8
+      ]
+    expectedSkyline1 =
+      [ Point 2 10
+      , Point 3 15
+      , Point 7 12
+      , Point 12 0
+      , Point 15 10
+      , Point 20 8
+      , Point 24 0
+      ]
+    buildings2 = [Building 0 2 3, Building 2 5 3]
+    expectedSkyline2 = [Point 0 3, Point 5 0]

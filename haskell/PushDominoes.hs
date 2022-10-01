@@ -3,7 +3,12 @@
 --        url: https://leetcode.com/problems/push-dominoes/
 -- difficulty: medium
 --------------------------------------------------------------------------------
-module PushDominoes (pushDominoes) where
+module PushDominoes
+  ( pushDominoes
+  , pushDominoesTests
+  ) where
+
+import           Test.HUnit
 
 pushDominoes :: [Char] -> [Char]
 pushDominoes = stitchGroups . map transformGroup . splitGroups . decorate
@@ -37,3 +42,10 @@ transformGroup group =
 
 stitchGroups :: [[Char]] -> [Char]
 stitchGroups = init . concatMap tail
+
+pushDominoesTests :: Test
+pushDominoesTests =
+  TestList
+    [ TestCase $ assertEqual "" "RR.L" $ pushDominoes "RR.L"
+    , TestCase $ assertEqual "" "LL.RR.LLRRLL.." $ pushDominoes ".L.R...LR..L.."
+    ]

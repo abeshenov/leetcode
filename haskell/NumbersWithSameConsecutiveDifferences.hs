@@ -3,7 +3,14 @@
 --        url: https://leetcode.com/problems/numbers-with-same-consecutive-differences/
 -- difficulty: medium
 --------------------------------------------------------------------------------
-module NumbersWithSameConsecutiveDifferences (numsSameConsecDiff) where
+module NumbersWithSameConsecutiveDifferences
+  ( numsSameConsecDiff
+  , numsSameConsecDiffTests
+  ) where
+
+import           Data.List  (sort)
+
+import           Test.HUnit
 
 numsSameConsecDiff :: Integer -> Integer -> [Integer]
 numsSameConsecDiff n k = concatMap (numsSameConsecDiff' n k) [1 .. 9]
@@ -20,3 +27,15 @@ numsSameConsecDiff' numOfDigits k firstDigit =
       numsSameConsecDiff' (numOfDigits - 1) k (firstDigit + k) ++
       numsSameConsecDiff' (numOfDigits - 1) k (firstDigit - k)
     addFirstDigit numOfDigits digit num = num + 10 ^ numOfDigits * digit
+
+numsSameConsecDiffTests :: Test
+numsSameConsecDiffTests =
+  TestList
+    [ TestCase $
+      assertEqual "" [181, 292, 707, 818, 929] $ sort $ numsSameConsecDiff 3 7
+    , TestCase $
+      assertEqual
+        ""
+        [10, 12, 21, 23, 32, 34, 43, 45, 54, 56, 65, 67, 76, 78, 87, 89, 98] $
+      sort $ numsSameConsecDiff 2 1
+    ]
