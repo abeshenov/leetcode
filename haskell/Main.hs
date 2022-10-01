@@ -3,6 +3,7 @@ module Main where
 import           AverageOfLevelsInBinaryTree
 import           BinaryTree
 import           Data.List                             (sort)
+import           DecodeWays
 import           FindKClosestElements
 import           NumbersWithSameConsecutiveDifferences
 import           PushDominoes
@@ -101,6 +102,17 @@ trappingRainWaterTests =
     , TestCase $ assertEqual "" 9 $ trap [4, 2, 0, 3, 2, 5]
     ]
 
+decodeWaysTests :: Test
+decodeWaysTests =
+  TestList
+    [ TestCase $ assertEqual "" 2 $ numDecodings "12"
+    , TestCase $ assertEqual "" 3 $ numDecodings "226"
+    , TestCase $ assertEqual "" 0 $ numDecodings "06"
+    , TestCase $
+      assertEqual "" 320 $
+      numDecodings "9976421093469582315631211511184959388481337534"
+    ]
+
 main :: IO Counts
 main = do
   runTestTT averageOfLevelsInBinaryTreeTests
@@ -109,3 +121,4 @@ main = do
   runTestTT pushDominoesTests
   runTestTT skylineProblemTests
   runTestTT trappingRainWaterTests
+  runTestTT decodeWaysTests

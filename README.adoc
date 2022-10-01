@@ -32,6 +32,11 @@
 - link:src/main/kotlin/skylineProblem.kt[2022-09-30: The Skyline Problem]
 
 
+== October 2022
+
+- link:src/main/kotlin/decodeWays.kt[2022-10-01: Decode Ways]
+
+
 == Basic data structures
 
 - link:src/main/kotlin/ListNode.kt[Linked list]
