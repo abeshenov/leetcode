@@ -3,7 +3,10 @@
 --        url: https://leetcode.com/problems/decode-ways/
 -- difficulty: medium
 --------------------------------------------------------------------------------
-module DecodeWays (numDecodings, numDecodingsTests) where
+module DecodeWays
+  ( numDecodings
+  , numDecodingsTests
+  ) where
 
 import           Test.HUnit
 
@@ -50,6 +53,8 @@ isValidCode [d1, d2] = d1 /= '0' && 1 <= val && val <= 26
     val = read [d1, d2] :: Int
 isValidCode _ = False
 
+--------------------------------------------------------------------------------
+-- Tests
 numDecodingsTests :: Test
 numDecodingsTests =
   TestList

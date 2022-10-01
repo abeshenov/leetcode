@@ -28,6 +28,8 @@ numsSameConsecDiff' numOfDigits k firstDigit =
       numsSameConsecDiff' (numOfDigits - 1) k (firstDigit - k)
     addFirstDigit numOfDigits digit num = num + 10 ^ numOfDigits * digit
 
+--------------------------------------------------------------------------------
+-- Tests
 numsSameConsecDiffTests :: Test
 numsSameConsecDiffTests =
   TestList

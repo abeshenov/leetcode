@@ -3,7 +3,10 @@
 --        url: https://leetcode.com/problems/trapping-rain-water/
 -- difficulty: hard
 --------------------------------------------------------------------------------
-module TrappingRainWater (trap, trapTests) where
+module TrappingRainWater
+  ( trap
+  , trapTests
+  ) where
 
 import           Test.HUnit
 
@@ -22,6 +25,8 @@ leftMaximums = scanl1 max
 rightMaximums :: [Integer] -> [Integer]
 rightMaximums = reverse . leftMaximums . reverse
 
+--------------------------------------------------------------------------------
+-- Tests
 trapTests :: Test
 trapTests =
   TestList

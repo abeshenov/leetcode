@@ -34,6 +34,8 @@ closestBinSearch' arr k x left right
   where
     mid = (left + right) `div` 2
 
+--------------------------------------------------------------------------------
+-- Tests
 findClosestElementsTests :: Test
 findClosestElementsTests =
   TestList

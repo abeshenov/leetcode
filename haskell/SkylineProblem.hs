@@ -77,6 +77,8 @@ mergeSkylines' firstList firstH secondList secondH =
       | firstX < secondX = (firstTail, firstY, secondList, secondH)
       | firstX == secondX = (firstTail, firstY, secondTail, secondY)
 
+--------------------------------------------------------------------------------
+-- Tests
 getSkylineTests :: Test
 getSkylineTests =
   TestList

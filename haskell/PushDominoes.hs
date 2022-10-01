@@ -43,6 +43,8 @@ transformGroup group =
 stitchGroups :: [[Char]] -> [Char]
 stitchGroups = init . concatMap tail
 
+--------------------------------------------------------------------------------
+-- Tests
 pushDominoesTests :: Test
 pushDominoesTests =
   TestList

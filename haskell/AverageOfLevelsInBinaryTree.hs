@@ -35,6 +35,8 @@ treeNodeValue (TreeNode x _ _) = x
 average :: [Int] -> Double
 average xs = fromIntegral (sum xs) / fromIntegral (length xs)
 
+--------------------------------------------------------------------------------
+-- Tests
 averageOfLevelsTests :: Test
 averageOfLevelsTests =
   TestList
