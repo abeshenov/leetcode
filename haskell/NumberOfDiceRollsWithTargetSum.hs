@@ -22,7 +22,7 @@ numRollsToTarget n k target =
     -- dp i is the array indexed by target sum
     dp 1 =
       listArray
-        (0, target)
+        (0, target - n + 1)
         [ if 1 <= i && i <= k
           then 1
           else 0
