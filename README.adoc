@@ -35,6 +35,7 @@
 == October 2022
 
 - link:src/main/kotlin/decodeWays.kt[2022-10-01: Decode Ways]
+- link:src/main/kotlin/numberOfDiceRollsWithTargetSum.kt[2022-10-02: Number of Dice Rolls With Target Sum]
 
 
 == Basic data structures

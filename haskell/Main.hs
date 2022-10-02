@@ -1,9 +1,9 @@
 module Main where
 
 import           AverageOfLevelsInBinaryTree
-import           BinaryTree
 import           DecodeWays
 import           FindKClosestElements
+import           NumberOfDiceRollsWithTargetSum
 import           NumbersWithSameConsecutiveDifferences
 import           PushDominoes
 import           SkylineProblem
@@ -14,6 +14,7 @@ main :: IO Counts
 main = do
   runTestTT averageOfLevelsTests
   runTestTT findClosestElementsTests
+  runTestTT numRollsToTargetTests
   runTestTT numsSameConsecDiffTests
   runTestTT pushDominoesTests
   runTestTT getSkylineTests
