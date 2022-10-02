@@ -31,7 +31,8 @@ numRollsToTarget n k target =
     dp i =
       listArray (0, target - n + i) $
       0 :
-      [ sumMod (10 ^ 9 + 7)
+      [ sumMod
+        (10 ^ 9 + 7)
         [ if (s - c) >= 0
           then dp' ! (s - c)
           else 0
