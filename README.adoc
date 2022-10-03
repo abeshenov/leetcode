@@ -44,6 +44,7 @@
 
 14. Pseudo-Palindromic Paths in a Binary Tree
   [link:src/main/kotlin/pseudoPalindromicPathsInBinaryTree.kt[Kotlin]]
+  [link:haskell/PseudoPalindromicPathsInBinaryTree.hs[Haskell]]
 
 15. Find Original Array From Doubled Array
   [link:src/main/kotlin/findOriginalArrayFromDoubledArray.kt[Kotlin]]

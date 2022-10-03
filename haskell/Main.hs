@@ -7,6 +7,7 @@ import           FindKClosestElements
 import           MinimumTimeToMakeRopeColorful
 import           NumberOfDiceRollsWithTargetSum
 import           NumbersWithSameConsecutiveDifferences
+import           PseudoPalindromicPathsInBinaryTree
 import           PushDominoes
 import           SkylineProblem
 import           Test.HUnit
@@ -21,6 +22,7 @@ main = do
   runTestTT numRollsToTargetTests
   runTestTT numsSameConsecDiffTests
   runTestTT pushDominoesTests
+  runTestTT pseudoPalindromicPathsTests
   runTestTT getSkylineTests
   runTestTT trapTests
   runTestTT numDecodingsTests
