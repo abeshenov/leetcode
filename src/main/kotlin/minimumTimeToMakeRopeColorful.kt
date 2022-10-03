@@ -9,7 +9,7 @@ fun minCost(colors: String, neededTime: IntArray): Int =
         .map(::minCostForGroup).sum()
 
 private fun String.zip(arr: IntArray): List<Pair<Char, Int>> =
-    arr.indices.map { i -> Pair(get(i), arr[i]) }
+    (0 .. Math.min(lastIndex, arr.lastIndex)).map { i -> Pair(get(i), arr[i]) }
 
 private fun splitInGroups(balloonsWithCost: List<Pair<Char, Int>>): List<List<Pair<Char, Int>>> {
     val result: MutableList<MutableList<Pair<Char, Int>>> = mutableListOf()
