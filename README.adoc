@@ -36,6 +36,7 @@
 
 - link:src/main/kotlin/decodeWays.kt[2022-10-01: Decode Ways]
 - link:src/main/kotlin/numberOfDiceRollsWithTargetSum.kt[2022-10-02: Number of Dice Rolls With Target Sum]
+- link:src/main/kotlin/minimumTimeToMakeRopeColorful.kt[2022-10-03: Minimum Time to Make Rope Colorful]
 
 
 == Basic data structures

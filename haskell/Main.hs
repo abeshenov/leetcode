@@ -3,6 +3,7 @@ module Main where
 import           AverageOfLevelsInBinaryTree
 import           DecodeWays
 import           FindKClosestElements
+import           MinimumTimeToMakeRopeColorful
 import           NumberOfDiceRollsWithTargetSum
 import           NumbersWithSameConsecutiveDifferences
 import           PushDominoes
@@ -14,6 +15,7 @@ main :: IO Counts
 main = do
   runTestTT averageOfLevelsTests
   runTestTT findClosestElementsTests
+  runTestTT numRollsToTargetTests
   runTestTT numRollsToTargetTests
   runTestTT numsSameConsecDiffTests
   runTestTT pushDominoesTests
