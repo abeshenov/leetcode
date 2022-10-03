@@ -1,120 +1,120 @@
 == September 2022
 
-- 2022-09-01: **Count Good Nodes in Binary Tree**
+1. Count Good Nodes in Binary Tree
   [link:src/main/kotlin/countGoodNodesInBinaryTree.kt[Kotlin]]
   [link:haskell/CountGoodNodesInBinaryTree.hs[Haskell]]
 
-- 2022-09-02: **Average of Levels in Binary Tree**
+2. Average of Levels in Binary Tree
   [link:src/main/kotlin/averageOfLevelsInBinaryTree.kt[Kotlin]]
   [link:haskell/AverageOfLevelsInBinaryTree.hs[Haskell]]
 
-- 2022-09-03: **Numbers With Same Consecutive Differences**
+3. Numbers With Same Consecutive Differences
   [link:src/main/kotlin/numbersWithSameConsecutiveDifferences.kt[Kotlin]]
   [link:haskell/NumbersWithSameConsecutiveDifferences.hs[Haskell]]
 
-- 2022-09-04: **Vertical Order Traversal of a Binary Tree**
+4. Vertical Order Traversal of a Binary Tree
   [link:src/main/kotlin/verticalOrderTraversalOfBinaryTree.kt[Kotlin]]
 
-- 2022-09-05: **N-ary Tree Level Order Traversal**
+5. N-ary Tree Level Order Traversal
   [link:src/main/kotlin/nAryTreeLevelOrderTraversal.kt[Kotlin]]
 
-- 2022-09-06: **Binary Tree Pruning**
+6. Binary Tree Pruning
   [link:src/main/kotlin/binaryTreePruning.kt[Kotlin]]
 
-- 2022-09-07: **Construct String from Binary Tree**
+7. Construct String from Binary Tree
   [link:src/main/kotlin/constructStringFromBinaryTree.kt[Kotlin]]
 
-- 2022-09-08: **Binary Tree Inorder Traversal**
+8. Binary Tree Inorder Traversal
   [link:src/main/kotlin/binaryTreeInorderTraversal.kt[Kotlin]]
 
-- 2022-09-09: **The Number of Weak Characters in the Game**
+9. The Number of Weak Characters in the Game
   [link:src/main/kotlin/numberOfWeakCharactersInGame.kt[Kotlin]]
 
-- 2022-09-10: **Best Time to Buy and Sell Stock IV**
+10. Best Time to Buy and Sell Stock IV
   [link:src/main/kotlin/bestTimeToBuyAndSellStock4.kt[Kotlin]]
 
-- 2022-09-11: **Maximum Performance of a Team**
+11. Maximum Performance of a Team
   [link:src/main/kotlin/maximumPerformanceOfTeam.kt[Kotlin]]
 
-- 2022-09-12: **Bag of Tokens**
+12. Bag of Tokens
   [link:src/main/kotlin/bagOfTokens.kt[Kotlin]]
 
-- 2022-09-13: **UTF-8 Validation**
+13. UTF-8 Validation
   [link:src/main/kotlin/utf8Validation.kt[Kotlin]]
 
-- 2022-09-14: **Pseudo-Palindromic Paths in a Binary Tree**
+14. Pseudo-Palindromic Paths in a Binary Tree
   [link:src/main/kotlin/pseudoPalindromicPathsInBinaryTree.kt[Kotlin]]
 
-- 2022-09-15: **Find Original Array From Doubled Array**
+15. Find Original Array From Doubled Array
   [link:src/main/kotlin/findOriginalArrayFromDoubledArray.kt[Kotlin]]
 
-- 2022-09-16: **Maximum Score from Performing Multiplication Operations**
+16. Maximum Score from Performing Multiplication Operations
   [link:src/main/kotlin/maximumScoreFromPerformingMultiplicationOperations.kt[Kotlin]]
 
-- 2022-09-17: **Palindrome Pairs**
+17. Palindrome Pairs
   [link:src/main/kotlin/palindromePairs.kt[Kotlin]]
 
-- 2022-09-18: **Trapping Rain Water**
+18. Trapping Rain Water
   [link:src/main/kotlin/trappingRainWater.kt[Kotlin]]
   [link:haskell/TrappingRainWater.hs[Haskell]]
 
-- 2022-09-19: **Find Duplicate File in System**
+19. Find Duplicate File in System
   [link:src/main/kotlin/findDuplicateFileInSystem.kt[Kotlin]]
 
-- 2022-09-20: **Maximum Length of Repeated Subarray**
+20. Maximum Length of Repeated Subarray
   [link:src/main/kotlin/maximumLengthOfRepeatedSubarray.kt[Kotlin]]
 
-- 2022-09-21: **Sum of Even Numbers After Queries**
+21. Sum of Even Numbers After Queries
   [link:src/main/kotlin/sumOfEvenNumbersAfterQueries.kt[Kotlin]]
 
-- 2022-09-22: **Reverse Words in a String III**
+22. Reverse Words in a String III
   [link:src/main/kotlin/reverseWordsInString3.kt[Kotlin]]
 
-- 2022-09-23: **Concatenation of Consecutive Binary Numbers**
+23. Concatenation of Consecutive Binary Numbers
   [link:src/main/kotlin/concatenationOfConsecutiveBinaryNumbers.kt[Kotlin]]
 
-- 2022-09-24: **Path Sum II**
+24. Path Sum II
   [link:src/main/kotlin/pathSum2.kt[Kotlin]]
 
-- 2022-09-25: **Design Circular Queue**
+25. Design Circular Queue
   [link:src/main/kotlin/designCircularQueue.kt[Kotlin]]
 
-- 2022-09-26: **Satisfiability of Equality Equations**
+26. Satisfiability of Equality Equations
   [link:src/main/kotlin/satisfiabilityOfEqualityEquations.kt[Kotlin]]
 
-- 2022-09-27: **Push Dominoes**
+27. Push Dominoes
   [link:src/main/kotlin/pushDominoes.kt[Kotlin]]
   [link:haskell/PushDominoes.hs[Haskell]]
 
-- 2022-09-28: **Remove Nth Node From End of List**
+28. Remove Nth Node From End of List
   [link:src/main/kotlin/removeNthNodeFromEndOfList.kt[Kotlin]]
 
-- 2022-09-29: **Find k closest elements**
+29. Find k closest elements
   [link:src/main/kotlin/findKClosestElements.kt[Kotlin]]
   [link:haskell/FindKClosestElements.hs[Haskell]]
 
-- 2022-09-30: **The Skyline Problem**
+30. The Skyline Problem
   [link:src/main/kotlin/skylineProblem.kt[Kotlin]]
   [link:haskell/SkylineProblem.hs[Haskell]]
 
 == October 2022
 
-- 2022-10-01: **Decode Ways**
+1. Decode Ways
   [link:src/main/kotlin/decodeWays.kt[Kotlin]]
   [link:haskell/DecodeWays.hs[Haskell]]
 
-- 2022-10-02: **Number of Dice Rolls With Target Sum**
+2. Number of Dice Rolls With Target Sum
   [link:src/main/kotlin/numberOfDiceRollsWithTargetSum.kt[Kotlin]]
   [link:haskell/NumberOfDiceRollsWithTargetSum.hs[Haskell]]
 
-- 2022-10-03: **Minimum Time to Make Rope Colorful**
+3. Minimum Time to Make Rope Colorful
   [link:src/main/kotlin/minimumTimeToMakeRopeColorful.kt[Kotlin]]
   [link:haskell/MinimumTimeToMakeRopeColorful.hs[Haskell]]
 
 
 == Basic data structures
 
-- **Linked list** [link:src/main/kotlin/ListNode.kt[Kotlin]]
-- **Binary Tree** [link:src/main/kotlin/TreeNode.kt[Kotlin]]
-- **Prefix tree (trie)** [link:src/main/kotlin/Trie.kt[Kotlin]]
-- **Union-find (disjoint-set)** [link:src/main/kotlin/UnionFind.kt[Kotlin]]
+- Linked list [link:src/main/kotlin/ListNode.kt[Kotlin]]
+- Binary Tree [link:src/main/kotlin/TreeNode.kt[Kotlin]]
+- Prefix tree (trie) [link:src/main/kotlin/Trie.kt[Kotlin]]
+- Union-find (disjoint-set) [link:src/main/kotlin/UnionFind.kt[Kotlin]]
