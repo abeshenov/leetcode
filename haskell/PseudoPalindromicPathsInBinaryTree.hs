@@ -33,14 +33,14 @@ isPalindrome acc = elem acc $ 0 : [1 `shiftL` digit | digit <- [0 .. 9]]
 
 countHelper :: BinaryTree Int -> Int -> Int
 countHelper EmptyTree _ = 0
-countHelper (TreeNode val left right) acc =
+countHelper (TreeNode digit left right) acc =
   if left == EmptyTree && right == EmptyTree
     then if isPalindrome newAcc
            then 1
            else 0
     else countHelper left newAcc + countHelper right newAcc
   where
-    newAcc = (1 `shiftL` val) `xor` acc
+    newAcc = (1 `shiftL` digit) `xor` acc
 
 --------------------------------------------------------------------------------
 -- Tests
