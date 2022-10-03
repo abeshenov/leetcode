@@ -20,8 +20,17 @@ concatenatedBinary n =
     modProd x y = (x * y) `mod` modulus
     -- f(n) = 2^(# number of binary digits of n)
     f = 1 : xs
-      where
-        xs = 2 : map (modProd 2) (concat $ transpose [xs, xs])
+    xs = 2 : map (modProd 2) (concat $ transpose [xs, xs])
+
+--------------------------------------------------------------------------------
+-- Same without modulus:
+
+concatenatedBinary' :: Int -> Int
+concatenatedBinary' n =
+  foldl (\a i -> (a * (f !! i)) + i) 1 [2 .. n]
+  where
+    f = 1 : xs
+    xs = 2 : map (* 2) (concat $ transpose [xs, xs])
 
 --------------------------------------------------------------------------------
 -- Tests
