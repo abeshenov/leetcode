@@ -27,17 +27,20 @@ concatenatedBinary n =
 -- Tests
 concatenatedBinaryTests :: Test
 concatenatedBinaryTests =
-  TestList
-    [ TestCase $ assertEqual "" 1 $ concatenatedBinary 1
-    , TestCase $ assertEqual "" 6 $ concatenatedBinary 2
-    , TestCase $ assertEqual "" 27 $ concatenatedBinary 3
-    , TestCase $ assertEqual "" 220 $ concatenatedBinary 4
-    , TestCase $ assertEqual "" 1765 $ concatenatedBinary 5
-    , TestCase $ assertEqual "" 14126 $ concatenatedBinary 6
-    , TestCase $ assertEqual "" 113015 $ concatenatedBinary 7
-    , TestCase $ assertEqual "" 1808248 $ concatenatedBinary 8
-    , TestCase $ assertEqual "" 28931977 $ concatenatedBinary 9
-    , TestCase $ assertEqual "" 462911642 $ concatenatedBinary 10
-    , TestCase $ assertEqual "" 406586234 $ concatenatedBinary 11
-    , TestCase $ assertEqual "" 505379714 $ concatenatedBinary 12
+  TestList $
+  zipWith
+    (\arg val -> TestCase $ assertEqual "" val $ concatenatedBinary arg)
+    [1 ..]
+    [ 1
+    , 6
+    , 27
+    , 220
+    , 1765
+    , 14126
+    , 113015
+    , 1808248
+    , 28931977
+    , 462911642
+    , 406586234
+    , 505379714
     ]
