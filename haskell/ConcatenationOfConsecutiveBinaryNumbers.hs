@@ -13,13 +13,15 @@ import           Test.HUnit
 
 concatenatedBinary :: Int -> Int
 concatenatedBinary n =
-  foldl (\a i -> ((a * (f !! i)) `mod` modulus + i) `mod` modulus) 1 [2 .. n]
+  foldl (\a i -> (a `modProd` (f !! i)) `modSum` i) 1 [2 .. n]
   where
     modulus = 10 ^ 9 + 7
+    modSum x y = (x + y) `mod` modulus
+    modProd x y = (x * y) `mod` modulus
     -- f(n) = 2^(# number of binary digits of n)
     f = 1 : xs
       where
-        xs = 2 : map (\x -> (x * 2) `mod` modulus) (concat $ transpose [xs, xs])
+        xs = 2 : map (modProd 2) (concat $ transpose [xs, xs])
 
 --------------------------------------------------------------------------------
 -- Tests
