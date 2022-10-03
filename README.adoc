@@ -73,6 +73,7 @@
 
 23. Concatenation of Consecutive Binary Numbers
   [link:src/main/kotlin/concatenationOfConsecutiveBinaryNumbers.kt[Kotlin]]
+  [link:haskell/ConcatenationOfConsecutiveBinaryNumbers.hs[Haskell]]
 
 24. Path Sum II
   [link:src/main/kotlin/pathSum2.kt[Kotlin]]
