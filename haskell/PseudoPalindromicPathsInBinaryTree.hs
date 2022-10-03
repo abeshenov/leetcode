@@ -28,9 +28,6 @@ import           Test.HUnit
 pseudoPalindromicPaths :: BinaryTree Int -> Int
 pseudoPalindromicPaths root = countHelper root 0
 
-isPalindrome :: Int -> Bool
-isPalindrome acc = elem acc $ 0 : [1 `shiftL` digit | digit <- [0 .. 9]]
-
 countHelper :: BinaryTree Int -> Int -> Int
 countHelper EmptyTree _ = 0
 countHelper (TreeNode digit left right) acc =
@@ -41,6 +38,7 @@ countHelper (TreeNode digit left right) acc =
     else countHelper left newAcc + countHelper right newAcc
   where
     newAcc = (1 `shiftL` digit) `xor` acc
+    isPalindrome acc = elem acc $ 0 : [1 `shiftL` digit | digit <- [0 .. 9]]
 
 --------------------------------------------------------------------------------
 -- Tests
