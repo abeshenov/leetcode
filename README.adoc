@@ -2,6 +2,7 @@
 
 - 2022-09-01: **Count Good Nodes in Binary Tree**
   [link:src/main/kotlin/countGoodNodesInBinaryTree.kt[Kotlin]]
+  [link:haskell/CountGoodNodesInBinaryTree.hs[Haskell]]
 
 - 2022-09-02: **Average of Levels in Binary Tree**
   [link:src/main/kotlin/averageOfLevelsInBinaryTree.kt[Kotlin]]

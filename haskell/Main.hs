@@ -1,6 +1,7 @@
 module Main where
 
 import           AverageOfLevelsInBinaryTree
+import           CountGoodNodesInBinaryTree
 import           DecodeWays
 import           FindKClosestElements
 import           MinimumTimeToMakeRopeColorful
@@ -14,6 +15,7 @@ import           TrappingRainWater
 main :: IO Counts
 main = do
   runTestTT averageOfLevelsTests
+  runTestTT goodNodesTests
   runTestTT findClosestElementsTests
   runTestTT numRollsToTargetTests
   runTestTT numRollsToTargetTests
