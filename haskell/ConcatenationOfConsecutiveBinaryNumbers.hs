@@ -24,10 +24,8 @@ concatenatedBinary n =
 
 --------------------------------------------------------------------------------
 -- Same without modulus:
-
 concatenatedBinary' :: Int -> Int
-concatenatedBinary' n =
-  foldl (\a i -> (a * (f !! i)) + i) 1 [2 .. n]
+concatenatedBinary' n = foldl (\a i -> (a * (f !! i)) + i) 1 [2 .. n]
   where
     f = 1 : xs
     xs = 2 : map (* 2) (concat $ transpose [xs, xs])
