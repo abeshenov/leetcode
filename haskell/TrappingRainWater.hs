@@ -18,12 +18,9 @@ trap height =
     (leftMaximums height)
     (rightMaximums height)
     height
-
-leftMaximums :: [Integer] -> [Integer]
-leftMaximums = scanl1 max
-
-rightMaximums :: [Integer] -> [Integer]
-rightMaximums = reverse . leftMaximums . reverse
+  where
+    leftMaximums = scanl1 max
+    rightMaximums = reverse . leftMaximums . reverse
 
 --------------------------------------------------------------------------------
 -- Tests
