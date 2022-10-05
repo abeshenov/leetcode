@@ -10,7 +10,7 @@ fun inorderTraversal(root: TreeNode?): List<Int> =
     if (root == null) {
         listOf()
     } else {
-        inorderTraversal(root.left) + listOf(root.`val`) + inorderTraversal(root.right)
+        inorderTraversal(root.left) + listOf(root.value) + inorderTraversal(root.right)
     }
 
 fun inorderTraversalStack(root: TreeNode?): List<Int> {
@@ -24,7 +24,7 @@ fun inorderTraversalStack(root: TreeNode?): List<Int> {
             ptr = ptr.left
         } else {
             ptr = stack.pop()
-            result.add(ptr.`val`)
+            result.add(ptr.value)
             ptr = ptr.right
         }
     }

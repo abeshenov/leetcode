@@ -10,8 +10,8 @@ fun goodNodes(root: TreeNode?): Int =
 private fun goodNodesRec(maxOnThePath: Int, root: TreeNode?): Int =
     if (root == null) {
         0
-    } else if (root.`val` < maxOnThePath) {
+    } else if (root.value < maxOnThePath) {
         goodNodesRec(maxOnThePath, root.left) + goodNodesRec(maxOnThePath, root.right)
     } else {
-        1 + goodNodesRec(root.`val`, root.left) + goodNodesRec(root.`val`, root.right)
+        1 + goodNodesRec(root.value, root.left) + goodNodesRec(root.value, root.right)
     }

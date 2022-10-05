@@ -26,7 +26,7 @@ private fun countHelper(node: TreeNode?, acc: Int = 0): Int {
         return 0
     }
 
-    val digit = node.`val`
+    val digit = node.value
     val newAcc = (1 shl digit) xor acc
 
     if (node.left == null && node.right == null) {

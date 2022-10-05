@@ -15,7 +15,7 @@ private fun getLevels(root: TreeNode?): Sequence<List<Int>> =
 private fun getLevelsHelper(level: List<TreeNode>): Sequence<List<Int>> =
     sequence {
         if (level.isNotEmpty()) {
-            yield(level.map { it.`val`})
+            yield(level.map { it.value})
             val nextLevel = level.flatMap { node -> listOf(node.left, node.right) }.filterNotNull()
             yieldAll(getLevelsHelper(nextLevel))
         }

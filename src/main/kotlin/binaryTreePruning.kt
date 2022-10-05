@@ -9,7 +9,7 @@ fun pruneTree(root: TreeNode?): TreeNode? {
         return null
     }
 
-    val result = TreeNode(root.`val`)
+    val result = TreeNode(root.value)
     result.left = pruneTree(root.left)
     result.right = pruneTree(root.right)
 
@@ -18,7 +18,7 @@ fun pruneTree(root: TreeNode?): TreeNode? {
 
 private fun containsOne(root: TreeNode?): Boolean =
     root != null &&
-            (root.`val` == 1 || containsOne(root.left) || containsOne(root.right))
+            (root.value == 1 || containsOne(root.left) || containsOne(root.right))
 
 
 // In-place version, to be used as
@@ -39,5 +39,5 @@ private fun inplacePruneHelper(root: TreeNode?): Boolean {
         root.right = null
     }
 
-    return root.`val` == 1 || leftBranchHasOne || rightBranchHasOne
+    return root.value == 1 || leftBranchHasOne || rightBranchHasOne
 }

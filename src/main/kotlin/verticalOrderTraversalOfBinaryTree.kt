@@ -40,7 +40,7 @@ private fun recursiveTraversalHelper(
         valuesByColumn[col]!![row] = mutableListOf()
     }
 
-    valuesByColumn[col]!![row]!!.add(root.`val`)
+    valuesByColumn[col]!![row]!!.add(root.value)
 
     recursiveTraversalHelper(valuesByColumn, root.left, row + 1, col - 1)
     recursiveTraversalHelper(valuesByColumn, root.right, row + 1, col + 1)
