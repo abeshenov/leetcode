@@ -113,6 +113,14 @@
   [link:src/main/kotlin/minimumTimeToMakeRopeColorful.kt[Kotlin]]
   [link:haskell/MinimumTimeToMakeRopeColorful.hs[Haskell]]
 
+4. Path Sum
+[link:src/main/kotlin/pathSum.kt[Kotlin]]
+[link:haskell/PathSum.hs[Haskell]]
+
+5. Add One Row to Tree
+[link:src/main/kotlin/addOneRowToTree.kt[Kotlin]]
+[link:haskell/AddOneRowToTree.hs[Haskell]]
+
 
 == Basic data structures
 
