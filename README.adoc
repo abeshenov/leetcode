@@ -121,6 +121,14 @@
   [link:src/main/kotlin/addOneRowToTree.kt[Kotlin]]
   [link:haskell/AddOneRowToTree.hs[Haskell]]
 
+6. Add One Row to Tree
+[link:src/main/kotlin/addOneRowToTree.kt[Kotlin]]
+[link:haskell/AddOneRowToTree.hs[Haskell]]
+
+7. Add One Row to Tree
+[link:src/main/kotlin/addOneRowToTree.kt[Kotlin]]
+[link:haskell/AddOneRowToTree.hs[Haskell]]
+
 
 == Basic data structures
 
