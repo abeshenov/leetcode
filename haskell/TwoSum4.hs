@@ -30,9 +30,15 @@ findTarget' target xs = s == target || findTarget' target xs'
 findTargetTests :: Test
 findTargetTests =
   TestList
-    [ TestCase $ assertEqual "" True $ findTarget 9 tree
-    , TestCase $ assertEqual "" False $ findTarget 28 tree
+    [ TestCase $ assertEqual "" True $ findTarget 9 tree1
+    , TestCase $ assertEqual "" False $ findTarget 28 tree1
+    , TestCase $ assertEqual "" True $ findTarget 60 tree2
+    , TestCase $ assertEqual "" True $ findTarget 180 tree2
+    , TestCase $ assertEqual "" False $ findTarget 130 tree2
+    , TestCase $ assertEqual "" False $ findTarget 169 tree2
     ]
   where
-    tree =
+    tree1 =
       TreeNode 5 (TreeNode 3 (leaf 2) (leaf 4)) (TreeNode 6 EmptyTree (leaf 7))
+    tree2 =
+        listToSearchTree [14, 17, 43, 50, 51, 53, 67, 89, 91, 94]
