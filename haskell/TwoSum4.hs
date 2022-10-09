@@ -1,7 +1,7 @@
---       date: 2022-10-08
---      title: 3Sum Closest
---        url: https://leetcode.com/problems/3sum-closest/
--- difficulty: medium
+--       date: 2022-10-09
+--      title: Two Sum IV - Input is a BST
+--        url: https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
+-- difficulty: easy
 --------------------------------------------------------------------------------
 module TwoSum4
   ( findTarget
