@@ -21,3 +21,6 @@ listToSearchTree = foldr insert EmptyTree
       | x < y = TreeNode y (insert x left) right
       | x == y = TreeNode y left right
       | x > y = TreeNode y left (insert x right)
+
+treeSort :: (Ord a) => [a] -> [a]
+treeSort = searchTreeToList . listToSearchTree
