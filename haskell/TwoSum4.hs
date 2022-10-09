@@ -12,11 +12,7 @@ import           BinaryTree
 import           Test.HUnit
 
 findTarget :: Int -> BinaryTree Int -> Bool
-findTarget target tree = findTarget' target $ treeToList tree
-
-treeToList :: BinaryTree a -> [a]
-treeToList EmptyTree               = []
-treeToList (TreeNode x left right) = treeToList left ++ [x] ++ treeToList right
+findTarget target tree = findTarget' target $ searchTreeToList tree
 
 findTarget' :: Int -> [Int] -> Bool
 findTarget' target [] = False
