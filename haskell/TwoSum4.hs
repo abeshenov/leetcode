@@ -15,8 +15,8 @@ findTarget :: Int -> BinaryTree Int -> Bool
 findTarget target tree = findTarget' target $ searchTreeToList tree
 
 findTarget' :: Int -> [Int] -> Bool
-findTarget' target [] = False
-findTarget' target [_] = False
+findTarget' _ [] = False
+findTarget' _ [_] = False
 findTarget' target xs = s == target || findTarget' target xs'
   where
     s = head xs + last xs
