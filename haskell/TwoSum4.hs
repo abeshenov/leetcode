@@ -29,7 +29,6 @@ findTarget' target xs = s == target || findTarget' target xs'
 -- Tests
 findTargetTests :: Test
 findTargetTests =
-  TestLabel "3Sum Closest" $
   TestList
     [ TestCase $ assertEqual "" True $ findTarget 9 tree
     , TestCase $ assertEqual "" False $ findTarget 28 tree
