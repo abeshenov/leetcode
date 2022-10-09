@@ -13,6 +13,7 @@ searchTreeToList EmptyTree = []
 searchTreeToList (TreeNode x left right) =
   searchTreeToList left ++ [x] ++ searchTreeToList right
 
+-- Removes duplicate elements (!)
 listToSearchTree :: (Ord a) => [a] -> BinaryTree a
 listToSearchTree = foldr insert EmptyTree
   where
@@ -22,5 +23,6 @@ listToSearchTree = foldr insert EmptyTree
       | x == y = TreeNode y left right
       | x > y = TreeNode y left (insert x right)
 
+-- Removes duplicate elements (!)
 treeSort :: (Ord a) => [a] -> [a]
 treeSort = searchTreeToList . listToSearchTree
