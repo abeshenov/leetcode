@@ -21,6 +21,7 @@ executable haskell
   build-depends:
       base >=4.13 && <4.14,
       array >=0.5.4.0,
+      sort >=1.0.0.0,
       HUnit >=1.6.2.0
   -- hs-source-dirs:
   default-language:    Haskell2010

@@ -14,7 +14,9 @@ import           PseudoPalindromicPathsInBinaryTree
 import           PushDominoes
 import           SkylineProblem
 import           Test.HUnit
+import           ThreeSumClosest
 import           TrappingRainWater
+import           TwoSum4
 
 main :: IO Counts
 main = do
@@ -31,4 +33,6 @@ main = do
   runTestTT pseudoPalindromicPathsTests
   runTestTT getSkylineTests
   runTestTT trapTests
+  runTestTT threeSumClosestTests
   runTestTT numDecodingsTests
+  runTestTT findTargetTests

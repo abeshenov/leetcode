@@ -121,13 +121,19 @@
   [link:src/main/kotlin/addOneRowToTree.kt[Kotlin]]
   [link:haskell/AddOneRowToTree.hs[Haskell]]
 
-6. Add One Row to Tree
-[link:src/main/kotlin/addOneRowToTree.kt[Kotlin]]
-[link:haskell/AddOneRowToTree.hs[Haskell]]
+6. Time Based Key-Value Store
+[link:src/main/kotlin/timeBasedKeyValueStore.kt[Kotlin]]
 
-7. Add One Row to Tree
-[link:src/main/kotlin/addOneRowToTree.kt[Kotlin]]
-[link:haskell/AddOneRowToTree.hs[Haskell]]
+7. My Calendar III
+[link:src/main/kotlin/myCalendar3.kt[Kotlin]]
+
+8. 3Sum Closest
+[link:src/main/kotlin/3sumClosest.kt[Kotlin]]
+[link:haskell/ThreeSumClosest.hs[Haskell]]
+
+9. Two Sum IV - Input is a BST
+[link:src/main/kotlin/twoSum4.kt[Kotlin]]
+[link:haskell/TwoSum4.hs[Haskell]]
 
 
 == Basic data structures
