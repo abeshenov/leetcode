@@ -135,6 +135,10 @@
   [link:src/main/kotlin/twoSum4.kt[Kotlin]]
   [link:haskell/TwoSum4.hs[Haskell]]
 
+10. Break a Palindrome
+  [link:src/main/kotlin/breakPalindrome.kt[Kotlin]]
+  [link:haskell/BreakPalindrome.hs[Haskell]]
+
 
 == Basic data structures
 

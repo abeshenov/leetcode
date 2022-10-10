@@ -2,6 +2,7 @@ module Main where
 
 import           AddOneRowToTree
 import           AverageOfLevelsInBinaryTree
+import           BreakPalindrome
 import           ConcatenationOfConsecutiveBinaryNumbers
 import           CountGoodNodesInBinaryTree
 import           DecodeWays
@@ -22,6 +23,7 @@ main :: IO Counts
 main = do
   runTestTT addOneRowTests
   runTestTT averageOfLevelsTests
+  runTestTT breakPalindromeTests
   runTestTT concatenatedBinaryTests
   runTestTT goodNodesTests
   runTestTT findClosestElementsTests
