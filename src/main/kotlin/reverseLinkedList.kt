@@ -33,7 +33,7 @@ fun reverseList(head: ListNode?): ListNode? {
 fun reverseListRecursive(head: ListNode?): ListNode? =
     when (head) {
         null -> null
-        else -> append(reverseListRecursive(head.next), head.`val`)
+        else -> append(reverseListRecursive(head.next), head.value)
     }
 
 // In-place append

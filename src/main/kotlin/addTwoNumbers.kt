@@ -15,13 +15,13 @@ fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
     while (firstListPtr != null || secondListPtr != null || carry != 0) {
         var x = 0
         if (firstListPtr != null) {
-            x = firstListPtr.`val`
+            x = firstListPtr.value
             firstListPtr = firstListPtr.next
         }
 
         var y = 0
         if (secondListPtr != null) {
-            y = secondListPtr.`val`
+            y = secondListPtr.value
             secondListPtr = secondListPtr.next
         }
 

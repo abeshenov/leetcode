@@ -7,7 +7,7 @@ fun deleteDuplicates(head: ListNode?): ListNode? {
     var ptr: ListNode? = head
 
     while (ptr != null) {
-        while (ptr.next != null && ptr.`val` == ptr.next!!.`val`) {
+        while (ptr.next != null && ptr.value == ptr.next!!.value) {
             ptr.next = ptr.next!!.next
         }
         ptr = ptr.next

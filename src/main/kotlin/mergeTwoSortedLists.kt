@@ -12,12 +12,12 @@ fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
         return list1
     }
 
-    return if (list1.`val` <= list2.`val`) {
-        val result = ListNode(list1.`val`)
+    return if (list1.value <= list2.value) {
+        val result = ListNode(list1.value)
         result.next = mergeTwoLists(list1.next, list2)
         result
     } else {
-        val result = ListNode(list2.`val`)
+        val result = ListNode(list2.value)
         result.next = mergeTwoLists(list1, list2.next)
         result
     }

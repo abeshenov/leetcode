@@ -6,7 +6,7 @@
 
 fun deleteNode(node: ListNode) {
     if (node.next != null) {  // always the case for this problem
-        node.`val` = node.next!!.`val`
+        node.value = node.next!!.value
         node.next = node.next!!.next
         // (since we don't know the previous node)
     }
