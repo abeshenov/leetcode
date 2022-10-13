@@ -7,6 +7,8 @@ import           ConcatenationOfConsecutiveBinaryNumbers
 import           CountGoodNodesInBinaryTree
 import           DecodeWays
 import           FindKClosestElements
+import           IncreasingTripletSubsequence
+import           LargestPerimeterTriangle
 import           MinimumTimeToMakeRopeColorful
 import           NumberOfDiceRollsWithTargetSum
 import           NumbersWithSameConsecutiveDifferences
@@ -27,6 +29,8 @@ main = do
   runTestTT concatenatedBinaryTests
   runTestTT goodNodesTests
   runTestTT findClosestElementsTests
+  runTestTT increasingTripletTests
+  runTestTT largestPerimeterTests
   runTestTT numRollsToTargetTests
   runTestTT numRollsToTargetTests
   runTestTT numsSameConsecDiffTests

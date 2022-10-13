@@ -1,3 +1,4 @@
+//       date: 2022-10-13
 //      title: Delete Node in a Linked List
 //        url: https://leetcode.com/problems/delete-node-in-a-linked-list/
 // difficulty: medium

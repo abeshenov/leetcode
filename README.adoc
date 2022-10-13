@@ -139,6 +139,17 @@
   [link:src/main/kotlin/breakPalindrome.kt[Kotlin]]
   [link:haskell/BreakPalindrome.hs[Haskell]]
 
+11. Increasing Triplet Subsequence
+  [link:src/main/kotlin/increasingTripletSubsequence.kt[Kotlin]]
+  [link:haskell/IncreasingTripletSubsequence.hs[Haskell]]
+
+12. Largest Perimeter Triangle
+  [link:src/main/kotlin/largestPerimeterTriangle.kt[Kotlin]]
+  [link:haskell/LargestPerimeterTriangle.hs[Haskell]]
+
+13. Delete Node in a Linked List
+  [link:src/main/kotlin/deleteNodeInLinkedList.kt[Kotlin]]
+
 
 == Basic data structures
 
