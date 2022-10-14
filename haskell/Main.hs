@@ -6,6 +6,7 @@ import           BreakPalindrome
 import           ConcatenationOfConsecutiveBinaryNumbers
 import           CountGoodNodesInBinaryTree
 import           DecodeWays
+import           DeleteMiddleNodeOfLinkedList
 import           FindKClosestElements
 import           IncreasingTripletSubsequence
 import           LargestPerimeterTriangle
@@ -28,6 +29,7 @@ main = do
   runTestTT breakPalindromeTests
   runTestTT concatenatedBinaryTests
   runTestTT goodNodesTests
+  runTestTT deleteMiddleTests
   runTestTT findClosestElementsTests
   runTestTT increasingTripletTests
   runTestTT largestPerimeterTests
