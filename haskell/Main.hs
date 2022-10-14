@@ -11,6 +11,7 @@ import qualified DecodeWays                              (tests)
 import qualified DeleteMiddleNodeOfLinkedList            (tests)
 import qualified FindKClosestElements                    (tests)
 import qualified IncreasingTripletSubsequence            (tests)
+import qualified KthLargestElement                       (tests)
 import qualified LargestPerimeterTriangle                (tests)
 import qualified MinimumTimeToMakeRopeColorful           (tests)
 import qualified NumberOfDiceRollsWithTargetSum          (tests)
@@ -34,6 +35,7 @@ main = do
   runTestTT DeleteMiddleNodeOfLinkedList.tests
   runTestTT FindKClosestElements.tests
   runTestTT IncreasingTripletSubsequence.tests
+  runTestTT KthLargestElement.tests
   runTestTT LargestPerimeterTriangle.tests
   runTestTT MinimumTimeToMakeRopeColorful.tests
   runTestTT NumberOfDiceRollsWithTargetSum.tests
