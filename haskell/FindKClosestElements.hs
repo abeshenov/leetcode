@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module FindKClosestElements
   ( findClosestElements
-  , findClosestElementsTests
+  , tests
   ) where
 
 import           Data.Array    (Array, array, bounds, ixmap, listArray, (!))
@@ -36,8 +36,8 @@ closestBinSearch' arr k x left right
 
 --------------------------------------------------------------------------------
 -- Tests
-findClosestElementsTests :: Test
-findClosestElementsTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $
       assertEqual "" [1, 2, 3, 4] $ findClosestElements [1, 2, 3, 4, 5] 4 3

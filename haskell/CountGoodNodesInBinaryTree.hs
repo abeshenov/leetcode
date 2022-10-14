@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module CountGoodNodesInBinaryTree
   ( goodNodes
-  , goodNodesTests
+  , tests
   ) where
 
 import           BinaryTree
@@ -24,8 +24,8 @@ goodNodes (TreeNode val left right) =
 
 --------------------------------------------------------------------------------
 -- Tests
-goodNodesTests :: Test
-goodNodesTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $
       assertEqual "" 4 $

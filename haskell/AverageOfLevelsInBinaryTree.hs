@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module AverageOfLevelsInBinaryTree
   ( averageOfLevels
-  , averageOfLevelsTests
+  , tests
   ) where
 
 import           BinaryTree
@@ -37,8 +37,8 @@ average xs = fromIntegral (sum xs) / fromIntegral (length xs)
 
 --------------------------------------------------------------------------------
 -- Tests
-averageOfLevelsTests :: Test
-averageOfLevelsTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" [3.0, 14.5, 11.0] $ averageOfLevels testTree1
     , TestCase $ assertEqual "" [3.0, 14.5, 11.0] $ averageOfLevels testTree2

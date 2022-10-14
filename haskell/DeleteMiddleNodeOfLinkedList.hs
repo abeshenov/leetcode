@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module DeleteMiddleNodeOfLinkedList
   ( deleteMiddle
-  , deleteMiddleTests
+  , tests
   ) where
 
 import           Test.HUnit
@@ -17,8 +17,8 @@ deleteMiddle xs = take m xs ++ drop (m + 1) xs
 
 --------------------------------------------------------------------------------
 -- Tests
-deleteMiddleTests :: Test
-deleteMiddleTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" [] $ deleteMiddle [1]
     , TestCase $ assertEqual "" [1] $ deleteMiddle [1, 2]

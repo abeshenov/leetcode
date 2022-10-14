@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module DecodeWays
   ( numDecodings
-  , numDecodingsTests
+  , tests
   ) where
 
 import           Test.HUnit
@@ -55,8 +55,8 @@ isValidCode _ = False
 
 --------------------------------------------------------------------------------
 -- Tests
-numDecodingsTests :: Test
-numDecodingsTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" 2 $ numDecodings "12"
     , TestCase $ assertEqual "" 3 $ numDecodings "226"

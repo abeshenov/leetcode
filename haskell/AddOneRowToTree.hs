@@ -6,7 +6,7 @@
 
 module AddOneRowToTree
   ( addOneRow
-  , addOneRowTests
+  , tests
   ) where
 
 import           BinaryTree
@@ -29,8 +29,8 @@ addOneRow (TreeNode nodeVal left right) value depth
 
 --------------------------------------------------------------------------------
 -- Tests
-addOneRowTests :: Test
-addOneRowTests =
+tests :: Test
+tests =
   TestList [TestCase $ assertEqual "" tree1' $ addOneRow tree1 1 3]
   where
     tree1 =

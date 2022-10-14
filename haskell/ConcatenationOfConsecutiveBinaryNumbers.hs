@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module ConcatenationOfConsecutiveBinaryNumbers
   ( concatenatedBinary
-  , concatenatedBinaryTests
+  , tests
   ) where
 
 import           Data.List  (transpose)
@@ -32,8 +32,8 @@ concatenatedBinary' n = foldl (\a i -> (a * (f !! i)) + i) 1 [2 .. n]
 
 --------------------------------------------------------------------------------
 -- Tests
-concatenatedBinaryTests :: Test
-concatenatedBinaryTests =
+tests :: Test
+tests =
   TestList $
   zipWith
     (\arg val -> TestCase $ assertEqual "" val $ concatenatedBinary arg)

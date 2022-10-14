@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module PseudoPalindromicPathsInBinaryTree
   ( pseudoPalindromicPaths
-  , pseudoPalindromicPathsTests
+  , tests
   ) where
 
 import           BinaryTree
@@ -42,8 +42,8 @@ countHelper (TreeNode digit left right) acc =
 
 --------------------------------------------------------------------------------
 -- Tests
-pseudoPalindromicPathsTests :: Test
-pseudoPalindromicPathsTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $
       assertEqual "" 1 $

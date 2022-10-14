@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module PushDominoes
   ( pushDominoes
-  , pushDominoesTests
+  , tests
   ) where
 
 import           Test.HUnit
@@ -45,8 +45,8 @@ stitchGroups = init . concatMap tail
 
 --------------------------------------------------------------------------------
 -- Tests
-pushDominoesTests :: Test
-pushDominoesTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" "RR.L" $ pushDominoes "RR.L"
     , TestCase $ assertEqual "" "LL.RR.LLRRLL.." $ pushDominoes ".L.R...LR..L.."

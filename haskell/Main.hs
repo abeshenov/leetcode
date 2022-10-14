@@ -1,46 +1,47 @@
 module Main where
 
-import           AddOneRowToTree
-import           AverageOfLevelsInBinaryTree
-import           BreakPalindrome
-import           ConcatenationOfConsecutiveBinaryNumbers
-import           CountGoodNodesInBinaryTree
-import           DecodeWays
-import           DeleteMiddleNodeOfLinkedList
-import           FindKClosestElements
-import           IncreasingTripletSubsequence
-import           LargestPerimeterTriangle
-import           MinimumTimeToMakeRopeColorful
-import           NumberOfDiceRollsWithTargetSum
-import           NumbersWithSameConsecutiveDifferences
-import           PathSum
-import           PseudoPalindromicPathsInBinaryTree
-import           PushDominoes
-import           SkylineProblem
 import           Test.HUnit
-import           ThreeSumClosest
-import           TrappingRainWater
-import           TwoSum4
+
+import qualified AddOneRowToTree                         (tests)
+import qualified AverageOfLevelsInBinaryTree             (tests)
+import qualified BreakPalindrome                         (tests)
+import qualified ConcatenationOfConsecutiveBinaryNumbers (tests)
+import qualified CountGoodNodesInBinaryTree              (tests)
+import qualified DecodeWays                              (tests)
+import qualified DeleteMiddleNodeOfLinkedList            (tests)
+import qualified FindKClosestElements                    (tests)
+import qualified IncreasingTripletSubsequence            (tests)
+import qualified LargestPerimeterTriangle                (tests)
+import qualified MinimumTimeToMakeRopeColorful           (tests)
+import qualified NumberOfDiceRollsWithTargetSum          (tests)
+import qualified NumbersWithSameConsecutiveDifferences   (tests)
+import qualified PathSum                                 (tests)
+import qualified PseudoPalindromicPathsInBinaryTree      (tests)
+import qualified PushDominoes                            (tests)
+import qualified SkylineProblem                          (tests)
+import qualified ThreeSumClosest                         (tests)
+import qualified TrappingRainWater                       (tests)
+import qualified TwoSum4                                 (tests)
 
 main :: IO Counts
 main = do
-  runTestTT addOneRowTests
-  runTestTT averageOfLevelsTests
-  runTestTT breakPalindromeTests
-  runTestTT concatenatedBinaryTests
-  runTestTT goodNodesTests
-  runTestTT deleteMiddleTests
-  runTestTT findClosestElementsTests
-  runTestTT increasingTripletTests
-  runTestTT largestPerimeterTests
-  runTestTT numRollsToTargetTests
-  runTestTT numRollsToTargetTests
-  runTestTT numsSameConsecDiffTests
-  runTestTT pushDominoesTests
-  runTestTT hasPathSumTests
-  runTestTT pseudoPalindromicPathsTests
-  runTestTT getSkylineTests
-  runTestTT trapTests
-  runTestTT threeSumClosestTests
-  runTestTT numDecodingsTests
-  runTestTT findTargetTests
+  runTestTT AddOneRowToTree.tests
+  runTestTT AverageOfLevelsInBinaryTree.tests
+  runTestTT BreakPalindrome.tests
+  runTestTT ConcatenationOfConsecutiveBinaryNumbers.tests
+  runTestTT CountGoodNodesInBinaryTree.tests
+  runTestTT DecodeWays.tests
+  runTestTT DeleteMiddleNodeOfLinkedList.tests
+  runTestTT FindKClosestElements.tests
+  runTestTT IncreasingTripletSubsequence.tests
+  runTestTT LargestPerimeterTriangle.tests
+  runTestTT MinimumTimeToMakeRopeColorful.tests
+  runTestTT NumberOfDiceRollsWithTargetSum.tests
+  runTestTT NumbersWithSameConsecutiveDifferences.tests
+  runTestTT PathSum.tests
+  runTestTT PseudoPalindromicPathsInBinaryTree.tests
+  runTestTT PushDominoes.tests
+  runTestTT SkylineProblem.tests
+  runTestTT ThreeSumClosest.tests
+  runTestTT TrappingRainWater.tests
+  runTestTT TwoSum4.tests

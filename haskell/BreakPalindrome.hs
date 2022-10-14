@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module BreakPalindrome
   ( breakPalindrome
-  , breakPalindromeTests
+  , tests
   ) where
 
 import           Test.HUnit
@@ -39,8 +39,8 @@ replaceLastA = reverse . replaceFirstA . reverse
 
 --------------------------------------------------------------------------------
 -- Tests
-breakPalindromeTests :: Test
-breakPalindromeTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" "" $ breakPalindrome "x"
     , TestCase $ assertEqual "" "aaba" $ breakPalindrome "abba"

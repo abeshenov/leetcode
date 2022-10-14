@@ -7,7 +7,7 @@ module SkylineProblem
   ( Building(..)
   , Point(..)
   , getSkyline
-  , getSkylineTests
+  , tests
   ) where
 
 import           Data.Array (Array, array, bounds, ixmap, listArray, (!))
@@ -79,8 +79,8 @@ mergeSkylines' firstList firstH secondList secondH =
 
 --------------------------------------------------------------------------------
 -- Tests
-getSkylineTests :: Test
-getSkylineTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" expectedSkyline1 $ getSkyline buildings1
     , TestCase $ assertEqual "" expectedSkyline2 $ getSkyline buildings2

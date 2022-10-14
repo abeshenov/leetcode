@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module TwoSum4
   ( findTarget
-  , findTargetTests
+  , tests
   ) where
 
 import           BinaryTree
@@ -27,8 +27,8 @@ findTarget' target xs = s == target || findTarget' target xs'
 
 --------------------------------------------------------------------------------
 -- Tests
-findTargetTests :: Test
-findTargetTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" True $ findTarget 9 tree1
     , TestCase $ assertEqual "" False $ findTarget 28 tree1

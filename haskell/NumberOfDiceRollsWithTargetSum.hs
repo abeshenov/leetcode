@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module NumberOfDiceRollsWithTargetSum
   ( numRollsToTarget
-  , numRollsToTargetTests
+  , tests
   ) where
 
 import           Data.Array (Array, listArray, (!))
@@ -45,8 +45,8 @@ numRollsToTarget n k target =
 
 --------------------------------------------------------------------------------
 -- Tests
-numRollsToTargetTests :: Test
-numRollsToTargetTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" 1 $ numRollsToTarget 1 6 3
     , TestCase $ assertEqual "" 6 $ numRollsToTarget 2 6 7

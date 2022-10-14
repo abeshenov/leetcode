@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module NumbersWithSameConsecutiveDifferences
   ( numsSameConsecDiff
-  , numsSameConsecDiffTests
+  , tests
   ) where
 
 import           Data.List  (sort)
@@ -30,8 +30,8 @@ numsSameConsecDiff' numOfDigits k firstDigit =
 
 --------------------------------------------------------------------------------
 -- Tests
-numsSameConsecDiffTests :: Test
-numsSameConsecDiffTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $
       assertEqual "" [181, 292, 707, 818, 929] $ sort $ numsSameConsecDiff 3 7

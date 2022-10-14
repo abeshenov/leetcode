@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module LargestPerimeterTriangle
   ( largestPerimeter
-  , largestPerimeterTests
+  , tests
   ) where
 
 import           Data.List  (sort)
@@ -27,8 +27,8 @@ isTriangle a b c = a + b > c
 
 --------------------------------------------------------------------------------
 -- Tests
-largestPerimeterTests :: Test
-largestPerimeterTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $
       assertEqual "" 242 $

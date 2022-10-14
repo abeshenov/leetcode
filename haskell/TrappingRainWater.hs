@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module TrappingRainWater
   ( trap
-  , trapTests
+  , tests
   ) where
 
 import           Test.HUnit
@@ -24,8 +24,8 @@ trap height =
 
 --------------------------------------------------------------------------------
 -- Tests
-trapTests :: Test
-trapTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" 6 $ trap [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
     , TestCase $ assertEqual "" 9 $ trap [4, 2, 0, 3, 2, 5]

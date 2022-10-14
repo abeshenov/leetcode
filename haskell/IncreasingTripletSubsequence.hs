@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module IncreasingTripletSubsequence
   ( increasingTriplet
-  , increasingTripletTests
+  , tests
   ) where
 
 import           Test.HUnit
@@ -23,8 +23,8 @@ increasingTriplet = increasingTriplet' (maxIntValue, maxIntValue)
 
 --------------------------------------------------------------------------------
 -- Tests
-increasingTripletTests :: Test
-increasingTripletTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" True $ increasingTriplet [3, 1, 4, 2, 5]
     , TestCase $ assertEqual "" True $ increasingTriplet [4, 2, 5, 1, 6, 3]

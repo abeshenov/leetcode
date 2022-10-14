@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module ThreeSumClosest
   ( threeSumClosest
-  , threeSumClosestTests
+  , tests
   ) where
 
 import           Data.List  (tails)
@@ -59,8 +59,8 @@ threeSumClosest'' target (firstElem:rest) bestSum =
 
 --------------------------------------------------------------------------------
 -- Tests
-threeSumClosestTests :: Test
-threeSumClosestTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" 2 $ threeSumClosest [-1, 2, 1, -4] 1
     , TestCase $

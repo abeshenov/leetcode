@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module MinimumTimeToMakeRopeColorful
   ( minCost
-  , minCostTests
+  , tests
   ) where
 
 import           Data.List  (groupBy)
@@ -27,8 +27,8 @@ minCostForGroup balloons = totalCost - maxCost
 
 --------------------------------------------------------------------------------
 -- Tests
-minCostTests :: Test
-minCostTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" 2 $ minCost "aabaa" [1, 2, 3, 4, 1]
     , TestCase $ assertEqual "" 0 $ minCost "abc" [1, 2, 3]

@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 module PathSum
   ( hasPathSum
-  , hasPathSumTests
+  , tests
   ) where
 
 import           BinaryTree
@@ -21,8 +21,8 @@ hasPathSum (TreeNode val left right) targetSum =
 
 --------------------------------------------------------------------------------
 -- Tests
-hasPathSumTests :: Test
-hasPathSumTests =
+tests :: Test
+tests =
   TestList
     [ TestCase $ assertEqual "" True $ hasPathSum tree1 22
     , TestCase $ assertEqual "" False $ hasPathSum tree2 5
