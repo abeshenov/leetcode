@@ -6,11 +6,13 @@ import qualified AddOneRowToTree                         (tests)
 import qualified AverageOfLevelsInBinaryTree             (tests)
 import qualified BreakPalindrome                         (tests)
 import qualified ConcatenationOfConsecutiveBinaryNumbers (tests)
+import qualified CountAndSay                             (tests)
 import qualified CountGoodNodesInBinaryTree              (tests)
 import qualified DecodeWays                              (tests)
 import qualified DeleteMiddleNodeOfLinkedList            (tests)
 import qualified FindKClosestElements                    (tests)
 import qualified IncreasingTripletSubsequence            (tests)
+import qualified IntegerToRoman                          (tests)
 import qualified KthLargestElement                       (tests)
 import qualified LargestPerimeterTriangle                (tests)
 import qualified MinimumTimeToMakeRopeColorful           (tests)
@@ -30,11 +32,13 @@ main = do
   runTestTT AverageOfLevelsInBinaryTree.tests
   runTestTT BreakPalindrome.tests
   runTestTT ConcatenationOfConsecutiveBinaryNumbers.tests
+  runTestTT CountAndSay.tests
   runTestTT CountGoodNodesInBinaryTree.tests
   runTestTT DecodeWays.tests
   runTestTT DeleteMiddleNodeOfLinkedList.tests
   runTestTT FindKClosestElements.tests
   runTestTT IncreasingTripletSubsequence.tests
+  runTestTT IntegerToRoman.tests
   runTestTT KthLargestElement.tests
   runTestTT LargestPerimeterTriangle.tests
   runTestTT MinimumTimeToMakeRopeColorful.tests
