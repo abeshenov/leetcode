@@ -21,6 +21,7 @@ import qualified NumbersWithSameConsecutiveDifferences   (tests)
 import qualified PathSum                                 (tests)
 import qualified PseudoPalindromicPathsInBinaryTree      (tests)
 import qualified PushDominoes                            (tests)
+import qualified SetMismatch                             (tests)
 import qualified SkylineProblem                          (tests)
 import qualified ThreeSumClosest                         (tests)
 import qualified TrappingRainWater                       (tests)
@@ -47,6 +48,7 @@ main = do
   runTestTT PathSum.tests
   runTestTT PseudoPalindromicPathsInBinaryTree.tests
   runTestTT PushDominoes.tests
+  runTestTT SetMismatch.tests
   runTestTT SkylineProblem.tests
   runTestTT ThreeSumClosest.tests
   runTestTT TrappingRainWater.tests
