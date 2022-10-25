@@ -13,7 +13,7 @@ import           Data.List  (group)
 import           Test.HUnit
 
 countAndSay :: Int -> String
-countAndSay = (countAndSaySeq !!)
+countAndSay n = countAndSaySeq !! (n - 1)
 
 -- Conway's look and say sequence
 -- 1, 11, 21, 1211, 111221, 312211, 13112221, 1113213211, ...
