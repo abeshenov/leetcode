@@ -5,6 +5,7 @@ import           Test.HUnit
 import qualified AddOneRowToTree                         (tests)
 import qualified AverageOfLevelsInBinaryTree             (tests)
 import qualified BreakPalindrome                         (tests)
+import qualified CheckIfTwoStringArraysAreEquivalent     (tests)
 import qualified ConcatenationOfConsecutiveBinaryNumbers (tests)
 import qualified CountAndSay                             (tests)
 import qualified CountGoodNodesInBinaryTree              (tests)
@@ -32,6 +33,7 @@ main = do
   runTestTT AddOneRowToTree.tests
   runTestTT AverageOfLevelsInBinaryTree.tests
   runTestTT BreakPalindrome.tests
+  runTestTT CheckIfTwoStringArraysAreEquivalent.tests
   runTestTT ConcatenationOfConsecutiveBinaryNumbers.tests
   runTestTT CountAndSay.tests
   runTestTT CountGoodNodesInBinaryTree.tests
