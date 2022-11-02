@@ -24,6 +24,7 @@ fun minMutation(start: String, end: String, bank: Array<String>): Int {
             if (str == end) {
                 return mutationCount
             }
+
             for (mutatedStr in mutations(str)) {
                 if (bankSet.contains(mutatedStr) &&
                     !seenStrings.contains(mutatedStr)
@@ -42,19 +43,16 @@ fun minMutation(start: String, end: String, bank: Array<String>): Int {
 
 private val letters = listOf('A', 'C', 'G', 'T')
 
-private fun mutations(str: String): List<String> {
-    val result: MutableList<String> = mutableListOf()
-
-    for (i in str.indices) {
-        for (letter in letters) {
-            if (str[i] != letter) {
-                result.add(mutate(str, i, letter))
+private fun mutations(str: String): Sequence<String> =
+    sequence {
+        for (i in str.indices) {
+            for (letter in letters) {
+                if (str[i] != letter) {
+                    yield(mutate(str, i, letter))
+                }
             }
         }
     }
 
-    return result
-}
-
 private fun mutate(str: String, pos: Int, letter: Char): String =
-    "${str.substring(0, pos)}$letter${str.substring(pos + 1)}"
+    str.substring(0, pos) + letter + str.substring(pos + 1)
