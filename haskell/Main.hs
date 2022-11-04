@@ -22,6 +22,7 @@ import qualified NumbersWithSameConsecutiveDifferences   (tests)
 import qualified PathSum                                 (tests)
 import qualified PseudoPalindromicPathsInBinaryTree      (tests)
 import qualified PushDominoes                            (tests)
+import qualified ReverseVowelsOfString                   (tests)
 import qualified SetMismatch                             (tests)
 import qualified SkylineProblem                          (tests)
 import qualified ThreeSumClosest                         (tests)
@@ -50,6 +51,7 @@ main = do
   runTestTT PathSum.tests
   runTestTT PseudoPalindromicPathsInBinaryTree.tests
   runTestTT PushDominoes.tests
+  runTestTT ReverseVowelsOfString.tests
   runTestTT SetMismatch.tests
   runTestTT SkylineProblem.tests
   runTestTT ThreeSumClosest.tests
