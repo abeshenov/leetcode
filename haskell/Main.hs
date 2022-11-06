@@ -19,6 +19,7 @@ import qualified LargestPerimeterTriangle                (tests)
 import qualified MinimumTimeToMakeRopeColorful           (tests)
 import qualified NumberOfDiceRollsWithTargetSum          (tests)
 import qualified NumbersWithSameConsecutiveDifferences   (tests)
+import qualified OrderlyQueue                            (tests)
 import qualified PathSum                                 (tests)
 import qualified PseudoPalindromicPathsInBinaryTree      (tests)
 import qualified PushDominoes                            (tests)
@@ -48,6 +49,7 @@ main = do
   runTestTT MinimumTimeToMakeRopeColorful.tests
   runTestTT NumberOfDiceRollsWithTargetSum.tests
   runTestTT NumbersWithSameConsecutiveDifferences.tests
+  runTestTT OrderlyQueue.tests
   runTestTT PathSum.tests
   runTestTT PseudoPalindromicPathsInBinaryTree.tests
   runTestTT PushDominoes.tests
