@@ -24,11 +24,11 @@ import           Test.HUnit
 --   This way we obtain the transposition (1,2). Together with the cyclic
 --   permutation (1,2,...,n), it generates all S_n.
 --   To get the answer, we can sort the characters of s.
-orderlyQueue :: String -> Int -> String
-orderlyQueue str k =
+orderlyQueue :: Int -> String -> String
+orderlyQueue k =
   if k == 1
-    then minimum $ cyclicShifts str
-    else sort str
+    then minimum . cyclicShifts
+    else sort
 
 cyclicShifts :: [a] -> [[a]]
 cyclicShifts str = take (length str) $ iterate (\(x:xs) -> xs ++ [x]) str
@@ -38,18 +38,18 @@ cyclicShifts str = take (length str) $ iterate (\(x:xs) -> xs ++ [x]) str
 tests :: Test
 tests =
   TestList
-    [ TestCase $ assertEqual "" "acb" $ orderlyQueue "cba" 1
-    , TestCase $ assertEqual "" "aaabc" $ orderlyQueue "baaca" 3
+    [ TestCase $ assertEqual "" "acb" $ orderlyQueue 1 "cba"
+    , TestCase $ assertEqual "" "aaabc" $ orderlyQueue 3 "baaca"
     , TestCase $
       assertEqual "" "bjcgsctncliqlkquvrdmckpwgtripwqf" $
-      orderlyQueue "iqlkquvrdmckpwgtripwqfbjcgsctncl" 1
+      orderlyQueue 1 "iqlkquvrdmckpwgtripwqfbjcgsctncl"
     , TestCase $
       assertEqual "" "amufhconfmtgmrbywdqevhiuilnoynou" $
-      orderlyQueue "evhiuilnoynouamufhconfmtgmrbywdq" 1
+      orderlyQueue 1 "evhiuilnoynouamufhconfmtgmrbywdq"
     , TestCase $
       assertEqual "" "bbcdefggghhlmnnooooqrssttuuuwyzz" $
-      orderlyQueue "sodhyugztgltqhncorbfbgueoszowunm" 2
+      orderlyQueue 2 "sodhyugztgltqhncorbfbgueoszowunm"
     , TestCase $
       assertEqual "" "aabbcdggghjkkkllmnpqrrrtuvvwwwyy" $
-      orderlyQueue "cwdhltvrrwuangvmywkygbrgqpjkkbal" 10
+      orderlyQueue 10 "cwdhltvrrwuangvmywkygbrgqpjkkbal"
     ]
