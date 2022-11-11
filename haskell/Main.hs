@@ -16,6 +16,7 @@ import qualified IncreasingTripletSubsequence            (tests)
 import qualified IntegerToRoman                          (tests)
 import qualified KthLargestElement                       (tests)
 import qualified LargestPerimeterTriangle                (tests)
+import qualified MakeStringGreat                         (tests)
 import qualified MinimumTimeToMakeRopeColorful           (tests)
 import qualified NumberOfDiceRollsWithTargetSum          (tests)
 import qualified NumbersWithSameConsecutiveDifferences   (tests)
@@ -23,6 +24,8 @@ import qualified OrderlyQueue                            (tests)
 import qualified PathSum                                 (tests)
 import qualified PseudoPalindromicPathsInBinaryTree      (tests)
 import qualified PushDominoes                            (tests)
+import qualified RemoveAllAdjacentDuplicatesInString     (tests)
+import qualified RemoveDuplicatesFromSortedArray         (tests)
 import qualified ReverseVowelsOfString                   (tests)
 import qualified SetMismatch                             (tests)
 import qualified SkylineProblem                          (tests)
@@ -46,6 +49,7 @@ main = do
   runTestTT IntegerToRoman.tests
   runTestTT KthLargestElement.tests
   runTestTT LargestPerimeterTriangle.tests
+  runTestTT MakeStringGreat.tests
   runTestTT MinimumTimeToMakeRopeColorful.tests
   runTestTT NumberOfDiceRollsWithTargetSum.tests
   runTestTT NumbersWithSameConsecutiveDifferences.tests
@@ -53,6 +57,8 @@ main = do
   runTestTT PathSum.tests
   runTestTT PseudoPalindromicPathsInBinaryTree.tests
   runTestTT PushDominoes.tests
+  runTestTT RemoveAllAdjacentDuplicatesInString.tests
+  runTestTT RemoveDuplicatesFromSortedArray.tests
   runTestTT ReverseVowelsOfString.tests
   runTestTT SetMismatch.tests
   runTestTT SkylineProblem.tests

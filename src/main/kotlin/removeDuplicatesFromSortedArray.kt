@@ -1,22 +1,22 @@
+//       date: 2022-11-11
 //      title: Remove Duplicates from Sorted Array
 //        url: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 // difficulty: easy
 //------------------------------------------------------------------------------
 
+// The problem asks to do this in-place;
+// see the Haskell version for a pure solution
 fun removeDuplicates(nums: IntArray): Int {
     var i = 0
     var j = 1
 
-    var count = 1
-
     while (j < nums.size) {
         if (nums[i] != nums[j]) {
-            nums[i+1] = nums[j]
             i++
-            count++
+            nums[i] = nums[j]
         }
         j++
     }
 
-    return count
+    return i + 1
 }
