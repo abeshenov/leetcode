@@ -154,6 +154,124 @@
   [link:src/main/kotlin/deleteMiddleNodeOfLinkedList.kt[Kotlin]]
   [link:haskell/DeleteMiddleNodeOfLinkedList.hs[Haskell]]
 
+15. String Compression II
+
+16. Minimum Difficulty of a Job Schedule
+
+17. Check if the Sentence Is Pangram
+  [link:src/main/kotlin/checkIfSentenceIsPangram.kt[Kotlin]]
+
+18. Count and Say
+  [link:src/main/kotlin/countAndSay.kt[Kotlin]]
+  [link:haskell/CountAndSay.hs[Haskell]]
+
+19. Top K Frequent Words
+
+20. Integer to Roman
+  [link:src/main/kotlin/integerToRoman.kt[Kotlin]]
+  [link:haskell/IntegerToRoman.hs[Haskell]]
+
+21. Contains Duplicate II
+
+22. Minimum Window Substring
+
+23. Set Mismatch
+  [link:src/main/kotlin/setMismatch.kt[Kotlin]]
+  [link:haskell/SetMismatch.hs[Haskell]]
+
+24. Maximum Length of a Concatenated String with Unique Characters
+
+25. Check If Two String Arrays are Equivalent
+  [link:src/main/kotlin/checkIfTwoStringArraysAreEquivalent.kt[Kotlin]]
+  [link:haskell/CheckIfTwoStringArraysAreEquivalent.hs[Haskell]]
+
+26. Continuous Subarray Sum
+
+27. Image Overlap
+
+28. Group Anagrams
+
+29. Earliest Possible Day of Full Bloom
+
+30. Shortest Path in a Grid with Obstacles Elimination
+
+31. Toeplitz Matrix
+  [link:src/main/kotlin/toeplitzMatrix.kt[Kotlin]]
+
+== November 2022
+
+1. Where Will the Ball Fall
+  [link:src/main/kotlin/whereWillBallFall.kt[Kotlin]]
+
+2. Minimum Genetic Mutation
+  [link:src/main/kotlin/minimumGeneticMutation.kt[Kotlin]]
+
+3. Longest Palindrome by Concatenating Two Letter Words
+
+4. Reverse Vowels of a String
+  [link:src/main/kotlin/reverseVowelsOfString.kt[Kotlin]]
+  [link:haskell/ReverseVowelsOfString.hs[Haskell]]
+
+5. Word Search II
+
+6. Orderly Queue
+  [link:src/main/kotlin/orderlyQueue.kt[Kotlin]]
+  [link:haskell/OrderlyQueue.hs[Haskell]]
+
+7. Maximum 69 Number
+
+8. Make The String Great
+  [link:src/main/kotlin/makeStringGreat.kt[Kotlin]]
+  [link:haskell/MakeStringGreat.hs[Haskell]]
+
+9. Online Stock Span
+
+10. Remove All Adjacent Duplicates In String
+  [link:src/main/kotlin/removeAllAdjacentDuplicatesInString.kt[Kotlin]]
+  [link:haskell/RemoveAllAdjacentDuplicatesInString.hs[Haskell]]
+
+11. Remove Duplicates from Sorted Array
+  [link:src/main/kotlin/removeDuplicatesFromSortedArray.kt[Kotlin]]
+  [link:haskell/RemoveDuplicatesFromSortedArray.hs[Haskell]]
+
+12. Find Median from Data Stream
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+22.
+
+23.
+
+24.
+
+25.
+
+26.
+
+27.
+
+28.
+
+29.
+
+30.
+
 == Basic data structures
 
 - Linked list [link:src/main/kotlin/ListNode.kt[Kotlin]]
