@@ -7,7 +7,7 @@
 import java.util.Stack
 
 // This is cheating, but we can also reimplement things from scratch :-)
-fun reverseWords(s: String): String =
+fun reverseWords3(s: String): String =
     s.split(" ").joinToString(" ") { it.reversed() }
 
 // Using stack

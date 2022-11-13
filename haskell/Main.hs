@@ -27,6 +27,7 @@ import qualified PushDominoes                            (tests)
 import qualified RemoveAllAdjacentDuplicatesInString     (tests)
 import qualified RemoveDuplicatesFromSortedArray         (tests)
 import qualified ReverseVowelsOfString                   (tests)
+import qualified ReverseWordsInString                   (tests)
 import qualified SetMismatch                             (tests)
 import qualified SkylineProblem                          (tests)
 import qualified ThreeSumClosest                         (tests)
@@ -60,6 +61,7 @@ main = do
   runTestTT RemoveAllAdjacentDuplicatesInString.tests
   runTestTT RemoveDuplicatesFromSortedArray.tests
   runTestTT ReverseVowelsOfString.tests
+  runTestTT ReverseWordsInString.tests
   runTestTT SetMismatch.tests
   runTestTT SkylineProblem.tests
   runTestTT ThreeSumClosest.tests
