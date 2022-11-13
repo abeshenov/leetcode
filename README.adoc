@@ -236,7 +236,9 @@
 
 12. Find Median from Data Stream
 
-13.
+13. Reverse Words in a String
+  [link:src/main/kotlin/reverseWordsInString.kt[Kotlin]]
+  [link:haskell/ReverseWordsInString.hs[Haskell]]
 
 14.
 
