@@ -240,11 +240,12 @@
   [link:src/main/kotlin/reverseWordsInString.kt[Kotlin]]
   [link:haskell/ReverseWordsInString.hs[Haskell]]
 
-14.
+14. Most Stones Removed with Same Row or Column
 
-15.
+15. Count Complete Tree Nodes
 
-16.
+16. Guess Number Higher or Lower
+  [link:src/main/kotlin/guessNumberHigherOrLower.kt[Kotlin]]
 
 17.
 
