@@ -247,7 +247,8 @@
 16. Guess Number Higher or Lower
   [link:src/main/kotlin/guessNumberHigherOrLower.kt[Kotlin]]
 
-17.
+17. Rectangle Area
+  [link:src/main/kotlin/rectangleArea.kt[Kotlin]]
 
 18.
 
