@@ -5,7 +5,7 @@
 //------------------------------------------------------------------------------
 
 fun isUgly(n: Int): Boolean =
-    listOf(2, 3, 5).fold(n) { m, p -> reduceFactors(m, p) } == 1
+    listOf(2, 3, 5).fold(n, ::reduceFactors) == 1
 
 private tailrec fun reduceFactors(m: Int, p: Int): Int =
     if (m == 0 || m % p != 0) m else reduceFactors(m / p, p)
