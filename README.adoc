@@ -250,7 +250,8 @@
 17. Rectangle Area
   [link:src/main/kotlin/rectangleArea.kt[Kotlin]]
 
-18.
+18. Ugly Number
+  [link:src/main/kotlin/uglyNumber.kt]
 
 19.
 
