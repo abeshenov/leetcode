@@ -253,15 +253,17 @@
 18. Ugly Number
   [link:src/main/kotlin/uglyNumber.kt[Kotlin]]
 
-19.
+19. Erect the Fence.
 
-20.
+20. Basic Calculator.
 
-21.
+21. Nearest Exit from Entrance in Maze.
 
-22.
+22. Perfect Squares
+  [link:src/main/kotlin/perfectSquares.kt[Kotlin]]
 
-23.
+23. Valid Sudoku
+  [link:src/main/kotlin/validSudoku.kt[Kotlin]]
 
 24.
 
